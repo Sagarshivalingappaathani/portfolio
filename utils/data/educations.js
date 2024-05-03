@@ -7,7 +7,7 @@ export const educations = [
   },
   {
     id: 2,
-    title: "PUC",
+    title: "Pre university course",
     duration: "2020 - 2022",
     institution: "Rashtrotthan Vidya Kendra, Bengaluru",
   },
