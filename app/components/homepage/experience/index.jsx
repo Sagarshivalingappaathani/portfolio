@@ -60,11 +60,16 @@ function Experience() {
                         </div>
                         <div>
                           <p className="text-base sm:text-xl mb-2 font-medium uppercase">
-                            {experience.title}
-                          </p>
-                          <p className="text-sm sm:text-base">
                             {experience.company}
                           </p>
+                          <p className="text-sm text-pink-600 sm:text-base mb-2">
+                            {experience.title}
+                          </p>
+                          <ul className="custom-list">
+                            {experience.Description.map((desc, index) => (
+                              <li key={index} className="mt-2">{desc}</li>
+                            ))}
+                          </ul>
                         </div>
                       </div>
                     </div>

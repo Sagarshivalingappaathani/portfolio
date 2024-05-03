@@ -14,7 +14,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: #0d1224;
+  background-color: #f8f8f8;
 }
 
 #sticky-card-1 {
@@ -36,4 +36,19 @@ body {
 .sticky-card {
   // padding-top: calc(var(--index) * 2.5rem);
   top: calc(var(--index) * 4rem);
+}
+
+.custom-list {
+  list-style-type: none; /* Remove default bullet points */
+}
+
+.custom-list li {
+  position: relative; /* Required for positioning the custom bullet */
+  padding-left: 20px; /* Adjust the left padding as needed */
+}
+
+.custom-list li::before {
+  content: "•"; /* Custom bullet symbol, you can change this to any other symbol */
+  position: absolute;
+  left: 0;
 }
