@@ -1,71 +1,89 @@
-// @flow strict
+import React from "react";
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillYoutube } from "react-icons/ai";
+import { BsLink45Deg } from "react-icons/bs";
+import { motion } from "framer-motion";
+import { projects } from "@/utils/data/projects-data";
+import Image from "next/image";
+import Link from "next/link";
+import GlowCard from "../../helper/glow-card";
 
-import * as React from 'react';
-
-function ProjectCard({ project }) {
-
+export const Project = (props) => {
   return (
-    <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">
-      <div className="flex flex-row">
-        <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
-        <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
-      </div>
-      <div className="px-4 lg:px-8 py-3 lg:py-5 relative">
-        <div className="flex flex-row space-x-1 lg:space-x-2 absolute top-1/2 -translate-y-1/2">
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-red-400"></div>
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-orange-400"></div>
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-green-200"></div>
+  <GlowCard key={props.id} identifier={`experience-${props.id}`}>
+    <motion.div
+      className="bg-[#140e39] px-12 py-8 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card"
+      whileInView={{ y: [-30, 0], opacity: [0, 1] }}
+      transition={{ duration: 0.75 }}
+    >
+      <div className="flex flex-col sm:-mx-4 sm:flex-row">
+        <Image
+          className="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300"
+          src={props.image}
+          alt=""
+          width={50}
+          height={50}
+        />
+        <div className="mt-4 sm:mx-4 sm:mt-0">
+          <h1 className="text-xl font-semibold font-poppins text-white capitalize md:text-2xl group-hover:text-white text-gradient">
+            {props.title}
+          </h1>
+          <p className="font-poppins font-normal text-dimWhite mt-3">
+            Tech Stack
+          </p>
+          <div className="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
+            <div className="flex sm:flex-row">
+              {props.stack.map((tech, index) => (
+                <div
+                  key={tech.id}
+                  index={index}
+                  className="text-dimWhite mr-5 text-[20px] hover:text-teal-200 tooltip"
+                >
+                  {React.createElement(tech.icon)}
+                  <span class="tooltiptext">{tech.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-        <p className="text-center ml-3 text-[#16f2b3] text-base lg:text-xl">
-          {project.name}
-        </p>
       </div>
-      <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
-        <code className="font-mono text-xs md:text-sm lg:text-base">
-          <div className="blink">
-            <span className="mr-2 text-pink-500">const</span>
-            <span className="mr-2 text-white">project</span>
-            <span className="mr-2 text-pink-500">=</span>
-            <span className="text-gray-400">{'{'}</span>
-          </div>
-          <div>
-            <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
-            <span className="text-gray-400">{`'`}</span>
-            <span className="text-amber-300">{project.name}</span>
-            <span className="text-gray-400">{`',`}</span>
-          </div>
+      <div className="mt-8 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 font-poppins">
+        {props.content}
+      </div>
 
-          <div className="ml-4 lg:ml-8 mr-2">
-            <span className=" text-white">tools:</span>
-            <span className="text-gray-400">{` ['`}</span>
-            {
-              project.tools.map((tag, i) => (
-                <React.Fragment key={i}>
-                  <span className="text-amber-300">{tag}</span>
-                  {
-                    project.tools.length - 1 !== i &&
-                    <span className="text-gray-400">{`', '`}</span>
-                  }
-                </React.Fragment>
-              ))
-            }
-            <span className="text-gray-400">{"],"}</span>
-          </div>
-          <div>
-            <span className="ml-4 lg:ml-8 mr-2 text-white">myRole:</span>
-            <span className="text-orange-400">{project.role}</span>
-            <span className="text-gray-400">,</span>
-          </div>
-          <div className="ml-4 lg:ml-8 mr-2">
-            <span className="text-white">Description:</span>
-            <span className="text-cyan-400">{' ' + project.description}</span>
-            <span className="text-gray-400">,</span>
-          </div>
-          <div><span className="text-gray-400">{`};`}</span></div>
-        </code>
+      <div className="flex mt-4 -mx-2">
+        {props.github ? (
+          <Link className="mr-5" href={props.github} target="_blank">
+            <AiFillGithub
+              size="2rem"
+              className="text-white mr-1 hover:text-teal-200"
+            ></AiFillGithub>
+          </Link>
+        ) : (
+          ""
+        )}
+        {props.link ? (
+          <Link className="mr-5" href={props.link} target="_blank">
+            <BsLink45Deg
+              size="2rem"
+              className="text-white hover:text-teal-200"
+            ></BsLink45Deg>
+          </Link>
+        ) : (
+          ""
+        )}
+        {props.demo ? (
+          <Link className="mr-5" href={props.demo} target="_blank">
+            <AiFillYoutube
+              size="2rem"
+              className="text-white hover:text-teal-200"
+            ></AiFillYoutube>
+          </Link>
+        ) : (
+          ""
+        )}
       </div>
-    </div>
+    </motion.div>
+    </GlowCard>
   );
 };
-
-export default ProjectCard;
