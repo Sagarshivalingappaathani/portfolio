@@ -39,6 +39,7 @@ import {
   SiHtml5,
   SiMongodb,
   SiGooglecalendar,
+  SiJava,
 } from "react-icons/si";
 
   export const projects = [
@@ -174,6 +175,44 @@ import {
           name: "HTML5"
         },
 
+      ],
+    },
+    {
+      id: "project-5",
+      title: "File System Simulation",
+      github: "https://github.com/Sagarshivalingappaathani/File-System-Simulation-Operating-System",
+      link: "https://github.com/Sagarshivalingappaathani/File-System-Simulation-Operating-System",
+      demo : "https://github.com/Sagarshivalingappaathani/File-System-Simulation-Operating-System",
+      image: "/image/os.png",
+      content:
+        "This Python application provides a graphical user interface (GUI) for various file system operations like lising all files in Current directory, Create, Rename, Delate, Move, Copy, Encryption, Decryption, Searching, Restoreing From Trash using Tkinter",
+        stack: [
+        {
+          id: "icon-1",
+          icon: SiPython,
+          name: "Python"
+        },
+      ],
+    },
+    {
+      id: "project-6",
+      title: "Library Management system",
+      github: "https://github.com/Sagarshivalingappaathani/Library-Management-system",
+      link: "",
+      demo : "https://www.youtube.com/watch?v=EUeQX5Y4O4A",
+      image: "/image/lms.jpg",
+      content:"This is a Java-based Library Management System application designed to help manage books and user records in a library. It allows administrators and users to perform various tasks such as viewing available books, searching for books, borrowing books, returning books, and more.",
+      stack: [
+        {
+          id: "icon-1",
+          icon: SiJavascript,
+          name: "Java"
+        },
+        {
+          id: "icon-2",
+          icon: SiMysql,
+          name: "MySQL"
+        },
       ],
     },
   ];
