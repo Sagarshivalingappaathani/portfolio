@@ -34,7 +34,11 @@ import {
   SiNextdotjs,
   SiMicrosoftazure,
   SiFirebase,
-  SiExpress
+  SiExpress,
+  SiNodedotjs,
+  SiHtml5,
+  SiMongodb,
+  SiGooglecalendar,
 } from "react-icons/si";
 
   export const projects = [
@@ -100,6 +104,76 @@ import {
           icon: SiExpress,
           name: "Express.js"
         },
+      ],
+    },
+    {
+      id: "project-3",
+      title: "Club Events Manegement System",
+      github: "https://github.com/Sagarshivalingappaathani/Club-Event-Management-System",
+      link: "https://github.com/Sagarshivalingappaathani/Club-Event-Management-System",
+      demo : "https://github.com/Sagarshivalingappaathani/Club-Event-Management-System",
+      image: "/image/cems.jpeg",
+      content:
+        "The Club Event Management System is a comprehensive web application built to streamline event organization within clubs or organizations. Powered by Mycalendar.js library. Users can explore upcoming events, register for participation, and provide feedback for concluded events, enhancing engagement and community interaction.",
+        stack: [
+        {
+          id: "icon-1",
+          icon: SiNextdotjs,
+          name: "Next.Js"
+        },
+        {
+          id: "icon-2",
+          icon: SiTailwindcss,
+          name: "TailwindCSS"
+        },
+        {
+          id: "icon-3",
+          icon: SiNodedotjs,
+          name: "Express.Js"
+        },
+        {
+          id: "icon-4",
+          icon: SiGooglecalendar,
+          name: "MyCalender.js"
+        },
+      ],
+    },
+    {
+      id: "project-4",
+      title: "DishDispatch",
+      github: "https://github.com/Sagarshivalingappaathani/DishDispatch-MERN-foodDelivary",
+      link: "https://github.com/Sagarshivalingappaathani/DishDispatch-MERN-foodDelivary",
+      demo : "https://www.youtube.com/watch?v=ZC13FF_0dok",
+      image: "/image/dishdispatch.png",
+      content:
+        "This platform aims to simplify the process of ordering and delivering food. Customers can browse a variety of dishes from menu, place their orders and they can track their orders And Admin of DishDispatch can efficiently manage food orders. This project leverages modern web technologies to create a seamless food delivery experience for both customers and owners.",
+        stack: [
+        {
+          id: "icon-1",
+          icon: SiMongodb,
+          name: "MongoDB"
+        },
+        {
+          id: "icon-2",
+          icon: SiTailwindcss,
+          name: "TailwindCSS"
+        },
+        {
+          id: "icon-3",
+          icon: SiNodedotjs,
+          name: "Node.Js"
+        },
+        {
+          id: "icon-4",
+          icon: SiExpress,
+          name: "Express.js"
+        },
+        {
+          id: "icon-5",
+          icon: SiHtml5,
+          name: "HTML5"
+        },
+
       ],
     },
   ];
