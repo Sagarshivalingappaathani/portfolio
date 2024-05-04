@@ -50,7 +50,7 @@ import {
       demo: "https://github.com/Sagarshivalingappaathani/TweetVerse-Social-Media-App",
       image: "/image/letscode.png",
       content:
-       "This platform is designed to resemble popular coding websites such as LeetCode and GeeksforGeeks.Its primary purpose is to assist users in competitive coding. Users can solve coding problems and track their progress, including the number of problems they've solved in each topic.Additionally, they can participate in coding contests to further enhance their skills",
+       "This platform is designed to resemble popular coding websites such as LeetCode and GeeksforGeeks.Its primary purpose is to assist users in competitive coding. Users can solve coding problems and track their progress, including the number of problems they've solved in each topic.Additionally, they can participate in coding contests.",
         stack: [
         {
           id: "icon-1",
@@ -146,7 +146,7 @@ import {
       demo : "https://www.youtube.com/watch?v=ZC13FF_0dok",
       image: "/image/dishdispatch.png",
       content:
-        "This platform aims to simplify the process of ordering and delivering food. Customers can browse a variety of dishes from menu, place their orders and they can track their orders And Admin of DishDispatch can efficiently manage food orders. This project leverages modern web technologies to create a seamless food delivery experience for both customers and owners.",
+        "This platform aims to simplify the process of ordering and delivering food. Customers can browse dishes from menu, place their orders And Admin of DishDispatch can efficiently manage food orders. This project leverages modern web technologies to create a seamless food delivery experience for both customers and owners.",
         stack: [
         {
           id: "icon-1",
