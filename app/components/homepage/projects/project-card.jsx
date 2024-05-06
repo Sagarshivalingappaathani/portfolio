@@ -13,7 +13,7 @@ export const Project = (props) => {
   <GlowCard key={props.id} identifier={`experience-${props.id}`}>
     <motion.div
       className="bg-[#101123] px-12 py-8 transition-colors duration-300 transform  rounded-xl"
-      whileInView={{ y: [-30, 0], opacity: [0, 1] }}
+      whileInView={{ y: [-15, 0], opacity: [0, 1] }}
       transition={{ duration: 0.75 }}
     >
       <div className="flex flex-col sm:-mx-4 sm:flex-row">

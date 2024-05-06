@@ -1,7 +1,7 @@
-// @flow strict
-
+"use client";
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 function AboutSection() {
   return (
@@ -29,30 +29,42 @@ function AboutSection() {
 
       <div className=" px-2 py-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
         <div className="flex justify-center">
-          <Image
-            src="/Sagar.jpg"
-            width={280}
-            height={280}
-            alt="Abu Said"
-            className="rounded-lg scale-110 cursor-pointer"
-          />
+          <motion.div
+            className="transition-colors duration-300 transform"
+            whileInView={{ y: [-30, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.75 }}
+          >
+            <Image
+              src="/Sagar.jpg"
+              width={280}
+              height={280}
+              alt="Abu Said"
+              className="rounded-lg scale-110 cursor-pointer"
+            />
+          </motion.div>
         </div>
         <div className="">
-          <div className="text-black font-sans text-sm lg:text-lg bg-gray-100 rounded-lg p-4 shadow-md">
-            <p className="font-medium mb-5 text-[#010101] text-xl uppercase">
-              Namaste,
-            </p>
-            <p className="font-bold">
-              I am Sagar Athani from Belagavi, Karnataka, currently pursuing a
-              B.Tech in Information Technology in NITK. Alongside my studies, I
-              actively participate in technical clubs to enrich my
-              extracurricular activities. My expertise lies in web development,
-              especially in the MERN stack. To enhance my problem-solving
-              abilities, I engage with platforms like LeetCode and
-              GeeksforGeeks, where I tackle challenges across various topics and
-              participate in contests.
-            </p>
-          </div>
+          <motion.div
+            className="transition-colors duration-300 transform"
+            whileInView={{ y: [-30, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.75 }}
+          >
+            <div className="text-black font-sans text-sm lg:text-lg bg-gray-100 rounded-lg p-4 shadow-md">
+              <p className="font-medium mb-5 text-pink-500 text-xl uppercase">
+                Namaste,
+              </p>
+              <p className="font-bold">
+                I am Sagar Athani from Belagavi, Karnataka, currently pursuing a
+                B.Tech in Information Technology in NITK. Alongside my studies,
+                I actively participate in technical clubs to enrich my
+                extracurricular activities. My expertise lies in web
+                development, especially in the MERN stack. To enhance my
+                problem-solving abilities, I engage with platforms like LeetCode
+                and GeeksforGeeks, where I tackle challenges across various
+                topics and participate in contests.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>
