@@ -6,9 +6,8 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 import experience from '/public/lottie/code.json';
-import ExperienceCard from "./card";
 
-function Experience() {
+function ExperienceCard() {
   return (
     <div id="experience" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <Image
@@ -85,4 +84,4 @@ function Experience() {
   );
 };
 
-export default Experience;
+export default ExperienceCard;

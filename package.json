@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.1",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "framer-motion": "^11.1.7",
     "lottie-react": "^2.4.0",
     "next": "latest",
@@ -18,7 +21,8 @@
     "react-dom": "latest",
     "react-fast-marquee": "^1.6.2",
     "react-icons": "^4.12.0",
-    "react-toastify": "^10.0.4"
+    "react-toastify": "^10.0.4",
+    "react-vertical-timeline-component": "^3.3.3"
   },
   "devDependencies": {
     "autoprefixer": "latest",
