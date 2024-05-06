@@ -27,7 +27,7 @@ const experiences = [
   },
 ];
 
-function Tests() {
+function Experiences() {
   return (
     <div
       id="experience"
@@ -147,4 +147,4 @@ function Tests() {
   );
 }
 
-export default Tests;
+export default Experiences;
