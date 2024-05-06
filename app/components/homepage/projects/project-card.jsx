@@ -12,7 +12,7 @@ export const Project = (props) => {
   return (
   <GlowCard key={props.id} identifier={`experience-${props.id}`}>
     <motion.div
-      className="bg-[#140e39] px-12 py-8 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card h-70"
+      className="bg-[#101123] px-12 py-8 transition-colors duration-300 transform  rounded-xl"
       whileInView={{ y: [-30, 0], opacity: [0, 1] }}
       transition={{ duration: 0.75 }}
     >
@@ -47,7 +47,7 @@ export const Project = (props) => {
           </div>
         </div>
       </div>
-      <div className="mt-8 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 font-poppins">
+      <div className="mt-8 text-gray-300 dark:text-gray-300 group-hover:text-gray-300 font-poppins">
         {props.content}
       </div>
 

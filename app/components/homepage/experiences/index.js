@@ -1,7 +1,8 @@
-import ExperienceCard from "../experience/card";
+"use client";
 import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
 import GlowCard from "../../helper/glow-card";
+import { motion } from "framer-motion";
 
 const experiences = [
   {
@@ -60,30 +61,36 @@ function Tests() {
                   key={experiences[0].id}
                   identifier={`experience-${experiences[0].id}`}
                 >
-                  <div className="p-3">
-                    <div className="flex">
-                      <p className="text-xs sm:text-sm text-[#16f2b3] mt-2">
-                        {experiences[0].duration}
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-x-8 px-3 py-5">
-                      <div>
-                        <p className="text-base sm:text-xl mb-2 font-medium uppercase">
-                          {experiences[0].company}
+                  <motion.div
+                    className="transition-colors duration-300 transform"
+                    whileInView={{ y: [-30, 0], opacity: [0, 1] }}
+                    transition={{ duration: 0.75 }}
+                  >
+                    <div className="p-3">
+                      <div className="flex">
+                        <p className="text-xs sm:text-sm text-[#16f2b3] mt-2">
+                          {experiences[0].duration}
                         </p>
-                        <p className="text-sm text-pink-600 sm:text-base mb-2">
-                          {experiences[0].title}
-                        </p>
-                        <ul className="custom-list">
-                          {experiences[0].Description.map((desc, index) => (
-                            <li key={index} className="mt-2">
-                              {desc}
-                            </li>
-                          ))}
-                        </ul>
+                      </div>
+                      <div className="flex items-center gap-x-8 px-3 py-5">
+                        <div>
+                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
+                            {experiences[0].company}
+                          </p>
+                          <p className="text-sm text-pink-600 sm:text-base mb-2">
+                            {experiences[0].title}
+                          </p>
+                          <ul className="custom-list">
+                            {experiences[0].Description.map((desc, index) => (
+                              <li key={index} className="mt-2">
+                                {desc}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 </GlowCard>
               </div>
             </div>
@@ -93,36 +100,42 @@ function Tests() {
 
         <div class="mt-6 sm:mt-0 sm:mb-12">
           <div class="flex flex-col sm:flex-row items-center">
-          <div class="flex justify-end w-full items-center mx-auto sm:ml-20">
+            <div class="flex justify-end w-full items-center mx-auto sm:ml-20">
               <div class="w-full sm:w-1/2 sm:pr-8 m-4">
                 <GlowCard
                   key={experiences[1].id}
                   identifier={`experience-${experiences[1].id}`}
                 >
-                  <div className="p-3">
-                    <div className="flex">
-                      <p className="text-xs sm:text-sm text-[#16f2b3] mt-2">
-                        {experiences[0].duration}
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-x-8 px-3 py-5">
-                      <div>
-                        <p className="text-base sm:text-xl mb-2 font-medium uppercase">
-                          {experiences[0].company}
+                  <motion.div
+                    className="transition-colors duration-300 transform"
+                    whileInView={{ y: [-30, 0], opacity: [0, 1] }}
+                    transition={{ duration: 0.75 }}
+                  >
+                    <div className="p-3">
+                      <div className="flex">
+                        <p className="text-xs sm:text-sm text-[#16f2b3] mt-2">
+                          {experiences[0].duration}
                         </p>
-                        <p className="text-sm text-pink-600 sm:text-base mb-2">
-                          {experiences[0].title}
-                        </p>
-                        <ul className="custom-list">
-                          {experiences[0].Description.map((desc, index) => (
-                            <li key={index} className="mt-2">
-                              {desc}
-                            </li>
-                          ))}
-                        </ul>
+                      </div>
+                      <div className="flex items-center gap-x-8 px-3 py-5">
+                        <div>
+                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
+                            {experiences[0].company}
+                          </p>
+                          <p className="text-sm text-pink-600 sm:text-base mb-2">
+                            {experiences[0].title}
+                          </p>
+                          <ul className="custom-list">
+                            {experiences[0].Description.map((desc, index) => (
+                              <li key={index} className="mt-2">
+                                {desc}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 </GlowCard>
               </div>
             </div>
