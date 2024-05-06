@@ -42,7 +42,7 @@ function AboutSection() {
             <p className="font-medium mb-5 text-[#010101] text-xl uppercase">
               Namaste,
             </p>
-            <p>
+            <p className="font-bold">
               I am Sagar Athani from Belagavi, Karnataka, currently pursuing a
               B.Tech in Information Technology in NITK. Alongside my studies, I
               actively participate in technical clubs to enrich my
