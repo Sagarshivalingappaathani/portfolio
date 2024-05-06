@@ -43,7 +43,7 @@ function AboutSection() {
               Namaste,
             </p>
             <p>
-              I'm Sagar Athani from Belagavi, Karnataka, currently pursuing a
+              I am Sagar Athani from Belagavi, Karnataka, currently pursuing a
               B.Tech in Information Technology in NITK. Alongside my studies, I
               actively participate in technical clubs to enrich my
               extracurricular activities. My expertise lies in web development,
