@@ -1,5 +1,3 @@
-"use client";
-import { motion } from "framer-motion";
 import { skillsData } from "@/utils/data/skills";
 import { skillsImage } from "@/utils/skill-image";
 import Image from "next/image";
@@ -36,11 +34,6 @@ function Skills() {
               key={id}
               className="flex flex-col items-center justify-center transition-all duration-500 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
             >
-              <motion.div
-                className="transition-colors duration-300 transform"
-                whileInView={{ y: [-30, 0], opacity: [0, 1] }}
-                transition={{ duration: 0.75 }}
-              >
                 <div className="w-full rounded-lg border border-[#cc5cca] bg-[#11152c] shadow-none shadow-gray-500 group-hover:border-pink-500 transition-all duration-500">
                   <div className="flex justify-center">
                     <div className="w-3/4">
@@ -60,7 +53,6 @@ function Skills() {
                     <p className="text-white text-sm sm:text-lg">{skill}</p>
                   </div>
                 </div>
-              </motion.div>
             </div>
           ))}
         </div>
