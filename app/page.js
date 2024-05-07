@@ -5,7 +5,6 @@ import Skills from "./components/homepage/skills";
 import Experiences from "./components/homepage/experiences";
 import AboutSection from "./components/homepage/about";
 import ContactSection from "./components/homepage/contact";
-import Navbar from "./components/homepage/test";
 export default async function Home() {
 
   return (
