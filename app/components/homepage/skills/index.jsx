@@ -1,5 +1,5 @@
-// @flow strict
-
+"use client";
+import { motion } from "framer-motion";
 import { skillsData } from "@/utils/data/skills";
 import { skillsImage } from "@/utils/skill-image";
 import Image from "next/image";
@@ -32,6 +32,11 @@ function Skills() {
       <div className="w-full my-12">
         <div className="w-full my-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           {skillsData.map((skill, id) => (
+            <motion.div
+        className="transition-colors duration-300 transform"
+        whileInView={{ y: [-30, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.75 }}
+      >
             <div
               key={id}
               className="flex flex-col items-center justify-center transition-all duration-500 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
@@ -56,6 +61,7 @@ function Skills() {
                 </div>
               </div>
             </div>
+            </motion.div>
           ))}
         </div>
       </div>
