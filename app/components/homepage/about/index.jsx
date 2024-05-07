@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function AboutSection() {
   return (
     <div
-      id="projects"
+      id="about"
       className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]"
     >
       <Image
