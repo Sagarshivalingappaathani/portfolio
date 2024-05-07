@@ -32,17 +32,17 @@ function ContactSection() {
         <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
           <div className="flex items-center bg-white rounded-lg p-3 hover:bg-gray-200 shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
             <IoMdCall className="text-gray-500 text-lg mr-2" />
-            <p className="text-sm text-gray-700 mr-4">+91-7975208724</p>
+            <p className="text-sm font-bold text-gray-700 mr-4">+91-7975208724</p>
           </div>
           <div className="flex items-center bg-white rounded-lg p-3 hover:bg-gray-200 shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
             <MdAlternateEmail className="text-gray-500 text-lg mr-2" />
-            <p className="text-sm text-gray-700 mr-4">
+            <p className="text-sm text-gray-700 mr-4 font-bold">
               sagarathani0418@gmail.com
             </p>
           </div>
           <div className="flex items-center bg-white rounded-lg p-3 hover:bg-gray-200 shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
             <CiLocationOn className="text-gray-500 text-lg mr-2" />
-            <p className="text-sm text-gray-700">Belagavi, Karnataka</p>
+            <p className="text-sm text-gray-700 font-bold">Belagavi, Karnataka</p>
           </div>
         </div>
       </div>

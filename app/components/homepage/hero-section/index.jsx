@@ -34,12 +34,12 @@ function HeroSection() {
             <h1 className="text-4xl font-bold leading-10 text-black md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
               Hi, there 👋
               <br />I am{" "}
-              <span className=" text-pink-500">Sagar Athani</span>
+              <span className=" text-pink-500">Sagar Athani,</span>
             </h1>
-            <h3 className="text-xl font-bold leading-10 text-black md:font-extrabold">
+            <h3 className="text-xl mt-3 font-bold leading-7 sm:leading-10 text-black md:font-extrabold">
               <span className=" text-[#070707]">
                 {
-                  'A Full Stack Web Developer with a Passion for Coding and Always Ready for the Next Coding Adventure."'
+                  'A Full Stack Web Developer with a Passion for Coding and Always Ready for the Next Coding Adventure.'
                 }
               </span>
             </h3>

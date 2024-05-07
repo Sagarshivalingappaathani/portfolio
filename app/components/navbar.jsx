@@ -9,8 +9,8 @@ function Navbar() {
     <nav className="bg-transparent">
       <div className="flex items-center justify-between py-5">
         <div className="flex flex-shrink-0 items-center">
-          <Link href="/" className=" text-[#010101] text-3xl font-bold">
-            sagar0418
+          <Link href="/" className=" text-[#010101] text-4xl font-bold">
+            {`<Sag/>`}
           </Link>
         </div>
         <ul
