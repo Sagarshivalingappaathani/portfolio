@@ -88,7 +88,7 @@ function HeroSection() {
               </Link>
             </div>
           </div>
-          <div className="order-1 lg:order-2  relative rounded-lg border">
+          <div className="order-1 lg:order-2  relative">
             <AnimationLottie animationPath={hero} />
           </div>
         </div>
