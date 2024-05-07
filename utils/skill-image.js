@@ -73,7 +73,8 @@ import webix from '/public/svg/skills/webix.svg';
 import wolframalpha from '/public/svg/skills/wolframalpha.svg';
 import wordpress from '/public/svg/skills/wordpress.svg';
 import node from '/public/svg/skills/node.svg'
-import expressjs from '/public/svg/skills/express.js.svg'
+import expressjs from '/public/svg/skills/express.js.svg';
+import github from '/public/svg/skills/github.gif'
 
 
 export const skillsImage = (skill) => {
@@ -81,6 +82,8 @@ export const skillsImage = (skill) => {
   switch (skillID) {
     case 'gcp':
       return gcp;
+    case 'github':
+      return github;
     case 'html':
       return html;
     case 'node js':
