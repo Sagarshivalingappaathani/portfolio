@@ -71,7 +71,7 @@ function Navbar() {
           <li>
             <a
               className="block px-4 py-2 no-underline font-bold hover:no-underline"
-              href="#projects"
+              href="#contact"
             >
               <div className="text-sm text-black transition-colors duration-300 hover:text-pink-600">
                 Contact
