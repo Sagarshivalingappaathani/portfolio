@@ -34,25 +34,25 @@ function Skills() {
               key={id}
               className="flex flex-col items-center justify-center transition-all duration-500 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
             >
-                <div className="w-full rounded-lg border border-[#cc5cca] bg-[#11152c] shadow-none shadow-gray-500 group-hover:border-pink-500 transition-all duration-500">
-                  <div className="flex justify-center">
-                    <div className="w-3/4">
-                      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-center gap-3 p-6">
-                    <div className="h-8 sm:h-10">
-                      <Image
-                        src={skillsImage(skill)?.src}
-                        alt={skill}
-                        width={40}
-                        height={40}
-                        className="h-full w-auto rounded-lg"
-                      />
-                    </div>
-                    <p className="text-white text-sm sm:text-lg">{skill}</p>
+              <div className="w-full rounded-lg border border-[#cc5cca] bg-[#11152c] shadow-none shadow-gray-500 group-hover:border-pink-500 transition-all duration-500">
+                <div className="flex justify-center">
+                  <div className="w-3/4">
+                    <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
                   </div>
                 </div>
+                <div className="flex flex-col items-center justify-center gap-3 p-6">
+                  <div className="h-8 sm:h-10">
+                    <Image
+                      src={skillsImage(skill)?.src}
+                      alt={skill}
+                      width={40}
+                      height={40}
+                      className="h-full w-auto rounded-lg"
+                    />
+                  </div>
+                  <p className="text-white text-sm sm:text-lg">{skill}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
