@@ -30,6 +30,16 @@ function Navbar() {
           <li>
             <a
               className="block px-4 py-2 no-underline font-bold hover:no-underline"
+              href="#education"
+            >
+              <div className="text-sm text-black transition-colors duration-300 hover:text-pink-600">
+                Education
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              className="block px-4 py-2 no-underline font-bold hover:no-underline"
               href="#experience"
             >
               <div className="text-sm text-black transition-colors duration-300 hover:text-pink-600">
@@ -54,16 +64,6 @@ function Navbar() {
             >
               <div className="text-sm text-black transition-colors duration-300 hover:text-pink-600">
                 Skills
-              </div>
-            </a>
-          </li>
-          <li>
-            <a
-              className="block px-4 py-2 no-underline font-bold hover:no-underline"
-              href="#education"
-            >
-              <div className="text-sm text-black transition-colors duration-300 hover:text-pink-600">
-                Education
               </div>
             </a>
           </li>
