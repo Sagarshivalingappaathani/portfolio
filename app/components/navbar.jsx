@@ -13,7 +13,6 @@ function Navbar() {
             sagar0418
           </Link>
         </div>
-
         <ul
           className="mt-4 flex h-screen max-h-0 w-full flex-col items-start text-sm opacity-0 md:mt-0 md:h-auto md:max-h-screen md:w-auto md:flex-row md:space-x-1 md:border-0 md:opacity-100"
           id="navbar-default"
@@ -79,6 +78,7 @@ function Navbar() {
             </a>
           </li>
         </ul>
+        
       </div>
     </nav>
   );
