@@ -11,6 +11,13 @@ function Skills() {
       id="skills"
       className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]"
     >
+    <Image
+        src="/hero.svg"
+        alt="Hero"
+        width={1572}
+        height={795}
+        className="absolute -top-[98px] -z-10"
+      />
       <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
 
       <div className="flex justify-center -translate-y-[1px]">
@@ -34,16 +41,16 @@ function Skills() {
         transition={{ duration: 0.75 }}
       >
         <div className="w-full my-12">
-          <div className="w-full my-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          <div className="w-full my-12 grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6">
             {skillsData.map((skill, id) => (
               <div
                 key={id}
-                className="flex flex-col items-center justify-center transition-all duration-500 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
+                className="flex flex-col items-center justify-center transition-all duration-500  relative hover:scale-[1.15] cursor-pointer"
               >
-                <div className="w-full rounded-lg border border-[#cc5cca] bg-[#11152c] shadow-none shadow-gray-500 group-hover:border-pink-500 transition-all duration-500">
+                <div className="w-full  shadow-none shadow-gray-500 transition-all duration-500">
                   <div className="flex justify-center">
                     <div className="w-3/4">
-                      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
+                      <div className="h-[1px] w-full" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center gap-3 p-6">
@@ -56,7 +63,7 @@ function Skills() {
                         className="h-full w-auto rounded-lg"
                       />
                     </div>
-                    <p className="text-white text-sm sm:text-lg">{skill}</p>
+                    <p className="text-black text-sm sm:text-lg">{skill}</p>
                   </div>
                 </div>
               </div>
