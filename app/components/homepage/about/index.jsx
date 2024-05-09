@@ -35,7 +35,7 @@ function AboutSection() {
             transition={{ duration: 0.75 }}
           >
             <Image
-              src="/Sag.jpg"
+              src="/Sagar.jpg"
               width={280}
               height={280}
               alt="Abu Said"

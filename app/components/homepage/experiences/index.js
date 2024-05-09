@@ -51,7 +51,7 @@ function Experiences() {
         </div>
       </div>
       <div class="relative text-gray-700 antialiased text-sm font-semibold">
-        <div class="sm:block w-1 bg-blue-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+        <div class="sm:block w-1 bg-blue-300 absolute h-full sm:left-1/2 sm:transform sm:-translate-x-1/2"></div>
 
         <div class="mt-6 sm:mt-0 sm:mb-12">
           <div class="flex flex-col sm:flex-row items-center">
@@ -94,7 +94,8 @@ function Experiences() {
                 </GlowCard>
               </div>
             </div>
-            <div class="rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center hidden sm:block"></div>
+            <div class="rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 hidden items-center justify-center sm:block"></div>
+            <div class="sm:hidden rounded-full bg-blue-500 border-white border-4 w-5 h-5 absolute left-0 translate-y-20  transform -translate-x-2 flex items-center justify-center"></div>
           </div>
         </div>
 
@@ -139,7 +140,8 @@ function Experiences() {
                 </GlowCard>
               </div>
             </div>
-            <div class="rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center hidden sm:block"></div>
+            <div class="hidden rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 sm:flex items-center justify-center"></div>
+            <div class="sm:hidden rounded-full bg-blue-500 border-white border-4 w-5 h-5 absolute left-0 translate-y-20  transform -translate-x-2 flex items-center justify-center"></div>
           </div>
         </div>
       </div>
