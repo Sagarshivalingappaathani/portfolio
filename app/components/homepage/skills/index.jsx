@@ -41,7 +41,7 @@ function Skills() {
         transition={{ duration: 0.75 }}
       >
         <div className="w-full my-12">
-          <div className="w-full my-12 grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6">
+          <div className="w-full my-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-6">
             {skillsData.map((skill, id) => (
               <div
                 key={id}
