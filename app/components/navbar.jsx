@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
@@ -10,7 +11,12 @@ function Navbar() {
       <div className="flex items-center justify-between py-5">
         <div className="flex flex-shrink-0 items-center">
           <Link href="/" className=" text-[#010101] text-4xl font-bold">
-            {`<Sag/>`}
+            <Image
+              src="/image/logo.png"
+              alt="Hero"
+              width={130}
+              height={70}
+            />
           </Link>
         </div>
         <ul
