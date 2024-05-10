@@ -14,7 +14,7 @@ const Projects = () => {
         src="/section.svg"
         alt="Hero"
         width={1572}
-        height={795}
+        height={995}
         className="absolute top-0 -z-10"
       />
 

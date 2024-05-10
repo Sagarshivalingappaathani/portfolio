@@ -63,7 +63,7 @@ function Skills() {
                         className="h-full w-auto rounded-lg"
                       />
                     </div>
-                    <p className="text-black text-sm sm:text-lg">{skill}</p>
+                    <p className="text-black text-sm sm:text-lg font-poppins">{skill}</p>
                   </div>
                 </div>
               </div>

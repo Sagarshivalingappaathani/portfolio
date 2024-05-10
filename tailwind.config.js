@@ -23,6 +23,9 @@ module.exports = {
           "3xl": "5rem",
         },
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
 
       extend: {
         screens: {

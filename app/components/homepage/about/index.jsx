@@ -50,10 +50,10 @@ function AboutSection() {
             transition={{ duration: 0.75 }}
           >
             <div className="text-black font-sans text-sm lg:text-lg bg-gray-100 rounded-lg p-4 shadow-md">
-              <p className="font-medium mb-5 text-pink-500 text-xl uppercase">
+              <p className="mb-5 text-pink-500 text-xl uppercase font-poppins font-semibold">
                 Namaste,
               </p>
-              <p className="font-bold">
+              <p className="font-semibold font-poppins">
                 I am Sagar Athani from Belagavi, Karnataka, currently pursuing a
                 B.Tech in Information Technology in NITK. Alongside my studies,
                 I actively participate in technical clubs to enrich my

@@ -14,16 +14,15 @@ const experiences = [
       "Developed a Club Event Management System in a team of 3 using Next.js, MongoDB, Express.js,and Mycalendar.js library",
       "Implemented RBAC (Role Based Access Control) for effective admin and member role management",
     ],
+    image: "/image/ie.png",
   },
   {
     id: 2,
-    title: "Executive Member",
-    company: "IE, NITK ",
-    duration: "(Dec. 2022 – Present)",
-    Description: [
-      "Developed a Club Event Management System in a team of 3 using Next.js, MongoDB, Express.js,and Mycalendar.js library for admin-friendly event scheduling and management.",
-      "Implemented RBAC (Role Based Access Control) for effective admin and member role management",
-    ],
+    title: "Web Developer Intern",
+    company: "NullClass",
+    duration: "(May. 2024 – Present)",
+    Description: [],
+    image: "/image/ie.png",
   },
 ];
 
@@ -94,7 +93,15 @@ function Experiences() {
                 </GlowCard>
               </div>
             </div>
-            <div class="rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 hidden items-center justify-center sm:block"></div>
+            <div class="rounded-full border-4 w-12 h-12 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 hidden items-center justify-center sm:block">
+              <Image
+                src="/image/ie.png"
+                alt="Hero"
+                width={130}
+                height={70}
+                className="rounded-full"
+              />
+            </div>
             <div class="sm:hidden rounded-full bg-blue-500 border-white border-4 w-5 h-5 absolute left-0 translate-y-20  transform -translate-x-2 flex items-center justify-center"></div>
           </div>
         </div>
@@ -115,19 +122,19 @@ function Experiences() {
                     <div className="p-3">
                       <div className="flex">
                         <p className="text-xs sm:text-sm text-[#16f2b3] mt-2">
-                          {experiences[0].duration}
+                          {experiences[1].duration}
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
                         <div>
                           <p className="text-base sm:text-xl mb-2 font-medium uppercase">
-                            {experiences[0].company}
+                            {experiences[1].company}
                           </p>
                           <p className="text-sm text-pink-600 sm:text-base mb-2">
-                            {experiences[0].title}
+                            {experiences[1].title}
                           </p>
                           <ul className="custom-list">
-                            {experiences[0].Description.map((desc, index) => (
+                            {experiences[1].Description.map((desc, index) => (
                               <li key={index} className="mt-2">
                                 {desc}
                               </li>
@@ -140,7 +147,15 @@ function Experiences() {
                 </GlowCard>
               </div>
             </div>
-            <div class="hidden rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 sm:flex items-center justify-center"></div>
+            <div class="hidden rounded-full  border-white border-4 w-12 h-1 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 sm:flex items-center justify-center">
+              <Image
+                src="/image/null.png"
+                alt="Hero"
+                width={130}
+                height={70}
+                className="rounded-full"
+              />
+            </div>
             <div class="sm:hidden rounded-full bg-blue-500 border-white border-4 w-5 h-5 absolute left-0 translate-y-20  transform -translate-x-2 flex items-center justify-center"></div>
           </div>
         </div>

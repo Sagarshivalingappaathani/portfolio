@@ -41,7 +41,7 @@ function ContactSection() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center gap-4 md:gap-8">
+            <div className="flex flex-col justify-center items-center gap-4 md:gap-8 font-poppins">
               <div className="flex items-center bg-white rounded-lg p-3 hover:bg-gray-200 shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
                 <IoMdCall className="text-gray-500 text-lg mr-2" />
                 <p className="text-sm font-bold text-gray-700 mr-4">

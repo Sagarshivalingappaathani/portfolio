@@ -83,7 +83,7 @@ import {
       demo : "https://github.com/Sagarshivalingappaathani/TweetVerse-Social-Media-App",
       image: "/image/tweetverse.png",
       content:
-        "This website is a social media platform that resembles Twitter. Users can register, log in securely, and engage with various features including posting content (text, images, or videos) and exploring trending topics via hashtags just like the twitter. Additionally, users can follow each other, and follower/following counts are displayed on user profiles.",
+        "This website is a social media platform that resembles Twitter. Users can register, log in securely, and engage with various features including posting content (text, images, or videos) and exploring trending topics via hashtags just like the twitter.users can follow each other, and follower/following counts are displayed on user profiles.",
          stack: [
         {
           id: "icon-1",
@@ -115,7 +115,7 @@ import {
       demo : "https://github.com/Sagarshivalingappaathani/Club-Event-Management-System",
       image: "/image/cems.jpeg",
       content:
-        "The Club Event Management System is a comprehensive web application built to streamline event organization within clubs or organizations. Powered by Mycalendar.js library. Users can explore upcoming events, register for participation, and provide feedback for concluded events, enhancing engagement and community interaction.",
+        "The Club Event Management System is a comprehensive web application built to streamline event organization within clubs or organizations. Powered by Mycalendar.js library. Users can explore upcoming events, register for participation, and provide feedback for concluded Events.",
         stack: [
         {
           id: "icon-1",
@@ -174,7 +174,6 @@ import {
           icon: SiHtml5,
           name: "HTML5"
         },
-
       ],
     },
     {
@@ -185,7 +184,7 @@ import {
       demo : "https://github.com/Sagarshivalingappaathani/File-System-Simulation-Operating-System",
       image: "/image/os.png",
       content:
-        "This Python application provides a graphical user interface (GUI) for various file system operations like lising all files in Current directory, Create, Rename, Delate, Move, Copy, Encryption, Decryption, Searching, Restoreing From Trash using Tkinter",
+        "This Python application provides a graphical user interface (GUI) for various file system operations like lising all files in Current directory, Create, Rename, Delate, Move, Copy, Encryption( Utilizes decryption libraries like cryptography to decrypt the file content ), Decryption, Searching, Restoreing From Trash using Tkinter",
         stack: [
         {
           id: "icon-1",
