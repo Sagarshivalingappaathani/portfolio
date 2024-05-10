@@ -32,14 +32,27 @@ function HeroSection() {
         <div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">
           <div className="order-2 lg:order-1 flex flex-col items-start justify-center p-2 my-10 md:pb-10 lg:pt-10">
             <h1 className="text-4xl font-bold leading-10 text-black md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
-              Hi, there 👋
-              <br />I am{" "}
-              <span className=" text-pink-500">Sagar Athani,</span>
+              Hi, there{" "}
+              <span
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  marginLeft: "5px",
+                }}
+              >
+                <Image
+                  src="/image/hello.gif"
+                  alt="Hello GIF"
+                  width={50}
+                  height={50}
+                />
+              </span>
+              <br />I am <span className=" text-pink-500">Sagar Athani,</span>
             </h1>
             <h3 className="text-xl mt-3 font-bold leading-7 sm:leading-10 text-black md:font-extrabold">
               <span className=" text-[#070707]">
                 {
-                  'A Full Stack Web Developer with a Passion for Coding and Always Ready for the Next Coding Adventure.'
+                  "A Full Stack Web Developer with a Passion for Coding and Always Ready for the Next Coding Adventure."
                 }
               </span>
             </h3>
