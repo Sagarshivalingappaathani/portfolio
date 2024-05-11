@@ -48,7 +48,7 @@ import {
       title: "LetsCode",
       github: "https://github.com/Sagarshivalingappaathani/letsCode-Coding-Platform",
       link: "https://lets-code-pink.vercel.app/",
-      demo: "https://github.com/Sagarshivalingappaathani/TweetVerse-Social-Media-App",
+      demo: "https://www.youtube.com/watch?v=Ax2vHEGnrkU",
       image: "/image/letscode.png",
       content:
        "This platform is designed to resemble popular coding websites such as LeetCode and GeeksforGeeks.Its primary purpose is to assist users in competitive coding. Users can solve coding problems and track their progress, including the number of problems they've solved in each topic.Additionally, they can participate in coding contests.",
@@ -79,7 +79,7 @@ import {
       id: "project-2",
       title: "TweetVerse",
       github: "https://github.com/Sagarshivalingappaathani/TweetVerse-Social-Media-App",
-      link: "https://github.com/Sagarshivalingappaathani/TweetVerse-Social-Media-App",
+      link: "",
       demo : "https://github.com/Sagarshivalingappaathani/TweetVerse-Social-Media-App",
       image: "/image/tweetverse.png",
       content:
@@ -111,7 +111,7 @@ import {
       id: "project-3",
       title: "Club Events Manegement System",
       github: "https://github.com/Sagarshivalingappaathani/Club-Event-Management-System",
-      link: "https://github.com/Sagarshivalingappaathani/Club-Event-Management-System",
+      link: "",
       demo : "https://github.com/Sagarshivalingappaathani/Club-Event-Management-System",
       image: "/image/cems.jpeg",
       content:
@@ -143,7 +143,7 @@ import {
       id: "project-4",
       title: "DishDispatch",
       github: "https://github.com/Sagarshivalingappaathani/DishDispatch-MERN-foodDelivary",
-      link: "https://github.com/Sagarshivalingappaathani/DishDispatch-MERN-foodDelivary",
+      link: "",
       demo : "https://www.youtube.com/watch?v=ZC13FF_0dok",
       image: "/image/dishdispatch.png",
       content:
@@ -180,8 +180,8 @@ import {
       id: "project-5",
       title: "File System Simulation",
       github: "https://github.com/Sagarshivalingappaathani/File-System-Simulation-Operating-System",
-      link: "https://github.com/Sagarshivalingappaathani/File-System-Simulation-Operating-System",
-      demo : "https://github.com/Sagarshivalingappaathani/File-System-Simulation-Operating-System",
+      link: "",
+      demo : "",
       image: "/image/os.png",
       content:
         "This Python application provides a graphical user interface (GUI) for various file system operations like lising all files in Current directory, Create, Rename, Delate, Move, Copy, Encryption( Utilizes decryption libraries like cryptography to decrypt the file content ), Decryption, Searching, Restoreing From Trash using Tkinter",
