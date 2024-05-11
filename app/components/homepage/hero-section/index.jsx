@@ -16,7 +16,7 @@ import hero from "/public/lottie/hero.json";
 
 function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-between py-4 lg:py-12 ">
+    <section className="relative flex flex-col items-center justify-between py-4 lg:py-8 ">
       <Image
         src="/hero.svg"
         alt="Hero"
