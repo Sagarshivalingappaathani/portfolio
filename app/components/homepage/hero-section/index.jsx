@@ -49,7 +49,7 @@ function HeroSection() {
               </span>
               <br />I am <span className=" text-pink-500">Sagar Athani,</span>
             </h1>
-            <h3 className="text-xl mt-3 font-semibold leading-7 sm:leading-10 text-black md:font-extrabold font-poppins">
+            <h3 className="text-xl mt-3 font-semibold leading-7 sm:leading-10 text-black font-poppins">
               <span className=" text-[#070707]">
                 {
                   "A Full Stack Web Developer with a Passion for Coding and Always Ready for the Next Coding Adventure."
