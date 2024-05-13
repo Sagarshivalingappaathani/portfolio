@@ -105,8 +105,10 @@ function HeroSection() {
           <div className="order-1 lg:order-2  relative">
             <AnimationLottie animationPath={hero} />
           </div>
-          <div className="hidden lg:z-10 lg:flex absolute lg:mt-7 lg:ml-7 lg:p-10 lg:top-1/3 lg:right-1/4 w-15 h-15">
-             <AnimationLottie animationPath={cat} />
+          <div className="hidden lg:flex absolute p-10 bottom-10 right-80 w-15 h-15">
+              <div className="">
+                <AnimationLottie animationPath={cat} />
+              </div>
           </div>
         </div>
       </motion.div>
