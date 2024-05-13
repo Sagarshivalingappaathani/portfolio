@@ -13,6 +13,7 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 import hero from "/public/lottie/hero.json";
+import cat from '/public/lottie/cat.json'
 
 function HeroSection() {
   return (
@@ -103,6 +104,9 @@ function HeroSection() {
           </div>
           <div className="order-1 lg:order-2  relative">
             <AnimationLottie animationPath={hero} />
+          </div>
+          <div className="hidden lg:flex absolute lg:top-3/4 lg:right-1/3">
+             <AnimationLottie animationPath={cat} />
           </div>
         </div>
       </motion.div>
