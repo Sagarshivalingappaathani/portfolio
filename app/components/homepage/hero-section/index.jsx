@@ -48,7 +48,7 @@ function HeroSection() {
                   height={50}
                 />
               </span>
-              <br />I am <span className=" text-pink-500">Sagar Athani,</span>
+              <br />I am <span className=" pink-gradient-text">Sagar Athani,</span>
             </h1>
             <h3 className="text-xl mt-3 font-semibold leading-7 sm:leading-10 text-black font-poppins">
               <span className=" text-[#070707]">
@@ -62,23 +62,23 @@ function HeroSection() {
               <Link
                 href={personalData.github}
                 target="_blank"
-                className="transition-all text-pink-500 hover:scale-125 duration-300"
+                className="transition-all text-black hover:scale-125 duration-300"
               >
-                <BsGithub size={30} />
+                <BsGithub size={35} />
               </Link>
               <Link
                 href={personalData.linkedIn}
                 target="_blank"
-                className="transition-all text-pink-500 hover:scale-125 duration-300"
+                className="transition-all text-blue-500 hover:scale-125 duration-300"
               >
-                <BsLinkedin size={30} />
+                <BsLinkedin size={35} />
               </Link>
               <Link
                 href={personalData.leetcode}
                 target="_blank"
-                className="transition-all text-pink-500 hover:scale-125 duration-300"
+                className="transition-all text-orange-500 hover:scale-125 duration-300"
               >
-                <SiLeetcode size={30} />
+                <SiLeetcode size={35} />
               </Link>
             </div>
 

@@ -25,7 +25,7 @@ export const Project = (props) => {
           height={50}
         />
         <div className="mt-4 sm:mx-4 sm:mt-0">
-          <h1 className="text-xl font-semibold font-poppins text-green-700 capitalize md:text-2xl group-hover:text-white text-gradient">
+          <h1 className="text-xl font-semibold font-poppins green-gradient-text capitalize md:text-2xl group-hover:text-white text-gradient">
             {props.title}
           </h1>
           <p className="font-poppins font-normal text-dimWhite mt-3 ">

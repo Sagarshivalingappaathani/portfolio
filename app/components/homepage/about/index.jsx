@@ -39,7 +39,7 @@ function AboutSection() {
               width={280}
               height={280}
               alt="Abu Said"
-              className="rounded-lg scale-110 cursor-pointer"
+              className="rounded-lg scale-110 cursor-pointer hover:scale-125 duration-300"
             />
           </motion.div>
         </div>
@@ -50,7 +50,7 @@ function AboutSection() {
             transition={{ duration: 0.75 }}
           >
             <div className="text-black font-sans text-sm lg:text-lg bg-gray-100 rounded-lg p-4 shadow-md">
-              <p className="mb-5 text-pink-500 text-xl uppercase font-poppins font-semibold">
+              <p className="mb-5 pink-gradient-text text-xl uppercase font-poppins font-semibold">
                 Namaste,
               </p>
               <p className="font-semibold font-poppins">

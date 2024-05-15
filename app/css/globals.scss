@@ -88,3 +88,32 @@ body {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.blue-gradient_text {
+  background-image: linear-gradient(to right,var(--tw-gradient-stops));
+  --tw-gradient-from: #00c6ff var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 198 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #0072ff var(--tw-gradient-to-position);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent
+}
+
+.pink-gradient-text {
+  background: linear-gradient(to right, #f472b6, #ec4899, #db2777);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-gradient-text {
+  background: linear-gradient(to right, #34d399, #10b981, #09845d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.orange-yellow-gradient-text {
+  background: linear-gradient(to right, #f59e0b, #fbbf24, #fcd34d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

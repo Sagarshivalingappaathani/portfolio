@@ -67,7 +67,7 @@ function Experiences() {
                   >
                     <div className="p-3">
                       <div className="flex">
-                        <p className="text-xs sm:text-sm text-[#16f2b3] mt-2">
+                        <p className="text-xs sm:text-sm green-gradient-text mt-2">
                           {experiences[0].duration}
                         </p>
                       </div>
@@ -121,7 +121,7 @@ function Experiences() {
                   >
                     <div className="p-3">
                       <div className="flex">
-                        <p className="text-xs sm:text-sm text-[#16f2b3] mt-2">
+                        <p className="text-xs sm:text-sm green-gradient-text mt-2">
                           {experiences[1].duration}
                         </p>
                       </div>
