@@ -21,7 +21,11 @@ const experiences = [
     title: "Web Developer Intern",
     company: "NullClass",
     duration: "(May. 2024 – Present)",
-    Description: [],
+    Description: [
+      "Created password reset functionality via email or phone.",
+      "Tracked user login info and implemented time-based mobile access rules.",
+      "Developed multi-language support, translating pages into Spanish, Hindi, Portuguese, Chinese, French, and English."
+    ],
     image: "/image/ie.png",
   },
 ];
@@ -50,7 +54,7 @@ function Experiences() {
         </div>
       </div>
       <div class="relative text-gray-700 antialiased text-sm font-semibold">
-        <div class="sm:block w-1 bg-blue-300 absolute h-full sm:left-1/2 sm:transform sm:-translate-x-1/2"></div>
+        <div class="sm:block w-1 bg-gray-500 absolute h-full sm:left-1/2 sm:transform sm:-translate-x-1/2"></div>
 
         <div class="mt-6 sm:mt-0 sm:mb-12">
           <div class="flex flex-col sm:flex-row items-center">
