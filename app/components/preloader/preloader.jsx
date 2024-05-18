@@ -1,15 +1,26 @@
-import React from 'react';
+"use client";
+import { motion } from "framer-motion";
 import AnimationLottie from "../helper/animation-lottie";
-import loader from "/public/lottie/preloader.json";
+import loader from "/public/lottie/hero.json";
 
-const Preloader = () => {
-  return (
-    <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
-      <div className="w-56 h-56">
-        <AnimationLottie animationPath={loader} />
-      </div>
-    </div>
-  );
+
+const Loading = () => {
+    return(
+        <motion.div
+            id="loading"
+            className="flex justify-center items-center h-screen"
+            initial={{ scale: 1.0, opacity: 0.25 }}
+            animate={{ scale: 2.0, opacity: 0.75 }}
+            transition={{
+                yoyo: Infinity,
+                duration: 1.0,
+                ease: "easeIn",
+            }}
+          >
+              <AnimationLottie animationPath={loader} />
+          </motion.div>
+        )
+   
 };
 
-export default Preloader;
+export default Loading;

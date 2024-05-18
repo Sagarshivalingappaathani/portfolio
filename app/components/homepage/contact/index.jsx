@@ -14,13 +14,13 @@ function ContactSection() {
   return (
     <div
       id="contact"
-      className="relative z-50 border-t mt-12 lg:mt-24 border-[#25213b] mb-0"
+      className="relative z-50 border-t mt-12 lg:mt-24 border-[#25213b] mb-5 h-56"
     >
       <Image
         src="/section.svg"
         alt="Hero"
         width={1572}
-        height={795}
+        height={600}
         className="absolute top-0 -z-10"
       />
       <motion.div
@@ -39,7 +39,7 @@ function ContactSection() {
             </div>
           </div>
 
-          <div className="mb-0">
+          <div className="mb-10">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16">
               <div className="flex justify-center items-start">
                 <div className="scale-150 px-5 mt-4 sm:mt-2">
