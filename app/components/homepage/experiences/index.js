@@ -3,32 +3,7 @@ import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
 import GlowCard from "../../helper/glow-card";
 import { motion } from "framer-motion";
-
-const experiences = [
-  {
-    id: 1,
-    title: "Executive Member",
-    company: "IE, NITK ",
-    duration: "(Dec. 2022 – Present)",
-    Description: [
-      "Developed a Club Event Management System in a team of 3 using Next.js, MongoDB, Express.js,and Mycalendar.js library",
-      "Implemented RBAC (Role Based Access Control) for effective admin and member role management",
-    ],
-    image: "/image/ie.png",
-  },
-  {
-    id: 2,
-    title: "Web Developer Intern",
-    company: "NullClass",
-    duration: "(May. 2024 – Present)",
-    Description: [
-      "Created password reset functionality via email or phone.",
-      "Tracked user login info and implemented time-based mobile access rules.",
-      "Developed multi-language support, translating pages into Spanish, Hindi, Portuguese, Chinese, French, and English."
-    ],
-    image: "/image/ie.png",
-  },
-];
+import { experiences } from "@/utils/data/experience";
 
 function Experiences() {
   return (
@@ -71,21 +46,21 @@ function Experiences() {
                   >
                     <div className="p-3">
                       <div className="flex">
-                        <p className="text-xs sm:text-sm green-gradient-text mt-2">
+                        <p className="text-xs sm:text-sm green-gradient-text mt-2  font-poppins">
                           {experiences[0].duration}
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
                         <div>
-                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
+                          <p className="text-base sm:text-xl mb-2 font-medium font-poppins uppercase">
                             {experiences[0].company}
                           </p>
-                          <p className="text-sm text-pink-600 sm:text-base mb-2">
+                          <p className="text-sm text-pink-600  font-poppins sm:text-base mb-2">
                             {experiences[0].title}
                           </p>
                           <ul className="custom-list">
                             {experiences[0].Description.map((desc, index) => (
-                              <li key={index} className="mt-2">
+                              <li key={index} className="mt-2 font-poppins">
                                 {desc}
                               </li>
                             ))}
@@ -125,21 +100,21 @@ function Experiences() {
                   >
                     <div className="p-3">
                       <div className="flex">
-                        <p className="text-xs sm:text-sm green-gradient-text mt-2">
+                        <p className="text-xs sm:text-sm green-gradient-text mt-2  font-poppins">
                           {experiences[1].duration}
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
                         <div>
-                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
+                          <p className="text-base sm:text-xl mb-2 font-medium uppercase  font-poppins">
                             {experiences[1].company}
                           </p>
-                          <p className="text-sm text-pink-600 sm:text-base mb-2">
+                          <p className="text-sm text-pink-600 sm:text-base mb-2 font-poppins">
                             {experiences[1].title}
                           </p>
                           <ul className="custom-list">
                             {experiences[1].Description.map((desc, index) => (
-                              <li key={index} className="mt-2">
+                              <li key={index} className="mt-2  font-poppins">
                                 {desc}
                               </li>
                             ))}

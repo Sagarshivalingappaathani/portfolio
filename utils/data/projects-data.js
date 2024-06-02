@@ -40,6 +40,8 @@ import {
   SiMongodb,
   SiGooglecalendar,
   SiJava,
+  SiSpringboot,
+  SiJbl
 } from "react-icons/si";
 
   export const projects = [
@@ -49,7 +51,7 @@ import {
       github: "https://github.com/Sagarshivalingappaathani/letsCode-Coding-Platform",
       link: "https://lets-code-pink.vercel.app/",
       demo: "https://www.youtube.com/watch?v=Ax2vHEGnrkU",
-      image: "/image/letscode.png",
+      image: "/project/letscode.png",
       content:
        "This platform is designed to resemble popular coding websites such as LeetCode and GeeksforGeeks.Its primary purpose is to assist users in competitive coding. Users can solve coding problems and track their progress, including the number of problems they've solved in each topic.Additionally, they can participate in coding contests.",
         stack: [
@@ -81,7 +83,7 @@ import {
       github: "https://github.com/Sagarshivalingappaathani/TweetVerse-Social-Media-App",
       link: "",
       demo : "https://github.com/Sagarshivalingappaathani/TweetVerse-Social-Media-App",
-      image: "/image/tweetverse.png",
+      image: "/project/tweetverse.png",
       content:
         "This website is a social media platform that resembles Twitter. Users can register, log in securely, and engage with various features including posting content (text, images, or videos) and exploring trending topics via hashtags just like the twitter.users can follow each other, and follower/following counts are displayed on user profiles.",
          stack: [
@@ -113,7 +115,7 @@ import {
       github: "https://github.com/Sagarshivalingappaathani/Club-Event-Management-System",
       link: "",
       demo : "https://github.com/Sagarshivalingappaathani/Club-Event-Management-System",
-      image: "/image/cems.jpeg",
+      image: "/project/cems.png",
       content:
         "The Club Event Management System is a comprehensive web application built to streamline event organization within clubs or organizations. Powered by Mycalendar.js library. Users can explore upcoming events, register for participation, and provide feedback for concluded Events.",
         stack: [
@@ -145,7 +147,7 @@ import {
       github: "https://github.com/Sagarshivalingappaathani/DishDispatch-MERN-foodDelivary",
       link: "",
       demo : "https://www.youtube.com/watch?v=ZC13FF_0dok",
-      image: "/image/dishdispatch.png",
+      image: "/project/dishdispatch.png",
       content:
         "This platform aims to simplify the process of ordering and delivering food. Customers can browse dishes from menu, place their orders And Admin of DishDispatch can efficiently manage food orders. This project leverages modern web technologies to create a seamless food delivery experience for both customers and owners.",
         stack: [
@@ -199,7 +201,7 @@ import {
       github: "https://github.com/Sagarshivalingappaathani/Library-Management-system",
       link: "",
       demo : "https://www.youtube.com/watch?v=EUeQX5Y4O4A",
-      image: "/image/lms.jpg",
+      image: "/project/lms.png",
       content:"This is a Java-based Library Management System application designed to help manage books and user records in a library. It allows administrators and users to perform various tasks such as viewing available books, searching for books, borrowing books, returning books, and more.",
       stack: [
         {

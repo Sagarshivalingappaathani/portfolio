@@ -3,6 +3,7 @@ import React from "react";
 import { projects } from "@/utils/data/projects-data";
 import Image from "next/image";
 import { Project } from "./project-card";
+import { ThreeDCardDemo } from "./3d-projectCard";
 
 const Projects = () => {
   return (
@@ -27,11 +28,10 @@ const Projects = () => {
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
       </div>
-
-      <div className="container px-2 py-10 mx-auto mb-8">
-        <div className="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
+      <div className="container">
+        <div className="grid grid-cols-1 gap-8 mt-4 md:mt-16 md:grid-cols-2">
           {projects.map((project, index) => (
-            <Project key={project.id} index={index} {...project} />
+            <ThreeDCardDemo key={project.id} index={index} {...project} />
           ))}
         </div>
       </div>

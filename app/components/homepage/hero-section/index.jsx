@@ -14,7 +14,7 @@ import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 import hero from "/public/lottie/hero.json";
 import cat from '/public/lottie/cat.json'
-
+import { TypewriterEffectSmooth } from "../../helper/ui/type-writer";
 function HeroSection() {
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-8">
@@ -51,7 +51,7 @@ function HeroSection() {
               <br />I am <span className=" pink-gradient-text">Sagar Athani,</span>
             </h1>
             <h3 className="text-xl mt-3 font-semibold leading-7 sm:leading-10 text-black font-poppins">
-              <span className=" text-[#070707]">
+              <span className=" text-[#070707] w-1/2">
                 {
                   "A Full Stack Web Developer with a Passion for Coding and Always Ready for the Next Coding Adventure."
                 }

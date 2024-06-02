@@ -1,0 +1,100 @@
+"use client";
+import Image from "next/image";
+import React from "react";
+import { CardBody, CardContainer, CardItem } from "../../helper/ui/3d-card";
+import Link from "next/link";
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillYoutube } from "react-icons/ai";
+import { BsLink45Deg } from "react-icons/bs";
+
+export function ThreeDCardDemo(props) {
+  return (
+    <CardContainer className="inter-var">
+      <CardBody className="relative group/card px-20 hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-black/[0.3] w-auto sm:w-[30rem] h-auto rounded-xl p-8 border">
+        <CardItem
+          as="h1"
+          translateZ="50"
+          className="text-xl font-semibold font-poppins green-gradient-text capitalize md:text-2xl group-hover:text-white text-gradient"
+        >
+          {props.title}
+        </CardItem>
+        <CardItem translateZ="100" className="w-full mt-4">
+          <Image
+            src={props.image}
+            height="1000"
+            width="1000"
+            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            alt="thumbnail"
+          />
+        </CardItem>
+        <CardItem
+          as="p"
+          translateZ="60"
+          className="font-poppins text-gray-300 text-sm max-w-sm mt-2 dark:text-neutral-300"
+        >
+          {props.content}
+        </CardItem>
+        <div className="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
+          <CardItem translateZ="60" className="flex sm:flex-row mt-5">
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="font-poppins font-normal text-dimWhite mr-2 text-pink-600"
+            >
+              Tech Stack
+            </CardItem>
+            {props.stack.map((tech, index) => (
+              <CardItem
+                translateZ="100"
+                key={tech.id}
+                index={index}
+                className="text-dimWhite mr-5 text-[20px] hover:text-teal-200 tooltip"
+              >
+                {React.createElement(tech.icon)}
+                <span class="tooltiptext">{tech.name}</span>
+              </CardItem>
+            ))}
+          </CardItem>
+        </div>
+
+        <CardItem
+          translateZ="60"
+          className="flex justify-between items-center mt-5"
+        >
+          <div className="flex -mx-2">
+            {props.github ? (
+              <Link className="mr-5" href={props.github} target="_blank">
+                <AiFillGithub
+                  size="2rem"
+                  className="text-white mr-1 hover:text-teal-700"
+                ></AiFillGithub>
+              </Link>
+            ) : (
+              ""
+            )}
+            {props.link ? (
+              <Link className="mr-5" href={props.link} target="_blank">
+                <BsLink45Deg
+                  size="2rem"
+                  className="text-white hover:text-teal-200"
+                ></BsLink45Deg>
+              </Link>
+            ) : (
+              ""
+            )}
+            {props.demo ? (
+              <Link className="mr-5" href={props.demo} target="_blank">
+                <AiFillYoutube
+                  size="2rem"
+                  className="text-white hover:text-teal-200"
+                ></AiFillYoutube>
+              </Link>
+            ) : (
+              ""
+            )}
+          </div>
+        </CardItem>
+      </CardBody>
+    </CardContainer>
+  );
+}
