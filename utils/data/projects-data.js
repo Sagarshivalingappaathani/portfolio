@@ -58,7 +58,8 @@ import {
         {
           id: "icon-1",
           icon: SiJavascript,
-          name: "Javascript"
+          name: "Javascript",
+          
         },
         {
           id: "icon-2",

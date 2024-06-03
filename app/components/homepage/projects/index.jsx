@@ -3,6 +3,7 @@ import React from "react";
 import { projects } from "@/utils/data/projects-data";
 import Image from "next/image";
 import { ThreeDCard } from "./3d-projectCard";
+import GlowCard from "../../helper/glow-card";
 
 const Projects = () => {
   return (

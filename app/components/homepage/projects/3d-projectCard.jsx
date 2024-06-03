@@ -10,11 +10,7 @@ import GlowCard from "../../helper/glow-card";
 export function ThreeDCard(props) {
   return (
     <CardContainer className="inter-var">
-      <GlowCard
-         key={props.id}
-         identifier={`project-${props.id}`}
-      >
-        <CardBody className="relative group/card px-20 hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-black/[0.3] w-auto sm:w-[30rem] h-auto rounded-xl p-8 border">
+        <CardBody className="relative group/card px-20 hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white[0.3] w-auto sm:w-[30rem] h-auto rounded-xl p-8 border">
           <CardItem
             as="h1"
             translateZ="50"
@@ -99,7 +95,7 @@ export function ThreeDCard(props) {
             </div>
           </CardItem>
         </CardBody>
-      </GlowCard>
+
     </CardContainer>
   );
 }
