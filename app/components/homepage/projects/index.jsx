@@ -2,8 +2,7 @@
 import React from "react";
 import { projects } from "@/utils/data/projects-data";
 import Image from "next/image";
-import { Project } from "./project-card";
-import { ThreeDCardDemo } from "./3d-projectCard";
+import { ThreeDCard } from "./3d-projectCard";
 
 const Projects = () => {
   return (
@@ -18,6 +17,13 @@ const Projects = () => {
         height={995}
         className="absolute top-0 -z-10"
       />
+      <Image
+        src="/blur-23.svg"
+        alt="Hero"
+        width={1572}
+        height={1572}
+        className="absolute bottom-0 -z-12"
+      />
 
       <div className="flex justify-center mt-5 lg:py-8">
         <div className="flex  items-center">
@@ -31,7 +37,7 @@ const Projects = () => {
       <div className="container">
         <div className="grid grid-cols-1 gap-8 mt-4 md:mt-16 md:grid-cols-2">
           {projects.map((project, index) => (
-            <ThreeDCardDemo key={project.id} index={index} {...project} />
+            <ThreeDCard key={project.id} index={index} {...project} />
           ))}
         </div>
       </div>

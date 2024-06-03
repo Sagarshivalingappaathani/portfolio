@@ -7,7 +7,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillYoutube } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
 
-export function ThreeDCardDemo(props) {
+export function ThreeDCard(props) {
   return (
     <CardContainer className="inter-var">
       <CardBody className="relative group/card px-20 hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-black/[0.3] w-auto sm:w-[30rem] h-auto rounded-xl p-8 border">
