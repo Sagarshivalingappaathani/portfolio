@@ -69,9 +69,9 @@ function ContactSection() {
               <div className="flex flex-col justify-center items-center gap-4 md:gap-8 font-poppins">
                 <div className="flex items-center bg-white rounded-lg p-3 hover:bg-gray-200 shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
                   <FaInstagram className="text-pink-500 text-lg mr-2" />
-                  <Link href="https://www.instagram.com/this.sag0418/" passHref>
+                  <Link href="https://www.instagram.com/_sagar0418/" passHref>
                     <p className="text-sm text-gray-700 font-bold cursor-pointer">
-                      this.sag0418
+                      _sagar0418
                     </p>
                   </Link>
                 </div>

@@ -38,7 +38,7 @@ export function ThreeDCardDemo(props) {
           <CardItem translateZ="60" className="flex sm:flex-row mt-5">
             <CardItem
               as="p"
-              translateZ="60"
+              translateZ="70"
               className="font-poppins font-normal text-dimWhite mr-2 text-pink-600"
             >
               Tech Stack
@@ -58,7 +58,7 @@ export function ThreeDCardDemo(props) {
         </div>
 
         <CardItem
-          translateZ="60"
+          translateZ="80"
           className="flex justify-between items-center mt-5"
         >
           <div className="flex -mx-2">
