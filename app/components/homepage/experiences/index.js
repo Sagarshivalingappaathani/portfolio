@@ -4,6 +4,7 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import GlowCard from "../../helper/glow-card";
 import { motion } from "framer-motion";
 import { experiences } from "@/utils/data/experience";
+import { CardContainer } from "../../helper/ui/3d-card";
 
 function Experiences() {
   return (

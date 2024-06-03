@@ -17,14 +17,6 @@ const Projects = () => {
         height={995}
         className="absolute top-0 -z-10"
       />
-      <Image
-        src="/blur-23.svg"
-        alt="Hero"
-        width={1572}
-        height={1572}
-        className="absolute bottom-0 -z-12"
-      />
-
       <div className="flex justify-center mt-5 lg:py-8">
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
@@ -35,7 +27,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="container">
-        <div className="grid grid-cols-1 gap-8 mt-4 md:mt-16 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 mt-4 md:mt-16 lg:grid-cols-2">
           {projects.map((project, index) => (
             <ThreeDCard key={project.id} index={index} {...project} />
           ))}

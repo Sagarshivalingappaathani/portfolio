@@ -6,6 +6,7 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 import lottieFile from "/public/lottie/education.json";
+import { CardContainer} from "../../helper/ui/3d-card"
 
 function Education() {
   return (
@@ -44,7 +45,7 @@ function Education() {
             </div>
           </div>
 
-          <div>
+          <CardContainer>
             <div className="flex flex-col gap-6 font-poppins">
               {educations.map((education) => (
                 <GlowCard
@@ -87,7 +88,7 @@ function Education() {
                 </GlowCard>
               ))}
             </div>
-          </div>
+          </CardContainer>
         </div>
       </div>
     </div>

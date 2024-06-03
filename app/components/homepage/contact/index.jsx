@@ -19,7 +19,7 @@ function ContactSection() {
         className="relative z-50 border-t mt-12 lg:mt-24 border-[#25213b] mb-5"
       >
         <Image
-          src="/top-bg.svg"
+          src="/section.svg"
           alt="Hero"
           width={1572}
           height={400}

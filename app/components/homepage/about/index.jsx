@@ -2,6 +2,7 @@
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { CardContainer } from "../../helper/ui/3d-card";
 
 function AboutSection() {
   return (
@@ -43,7 +44,7 @@ function AboutSection() {
             />
           </motion.div>
         </div>
-        <div className="">
+        <CardContainer className="">
           <motion.div
             className="transition-colors duration-300 transform"
             whileInView={{ y: [-30, 0], opacity: [0, 1] }}
@@ -65,7 +66,7 @@ function AboutSection() {
               </p>
             </div>
           </motion.div>
-        </div>
+        </CardContainer>
       </div>
     </div>
   );
