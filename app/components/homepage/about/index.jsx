@@ -3,6 +3,7 @@ import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { CardContainer } from "../../helper/ui/3d-card";
+import GlowCard from "../../helper/glow-card";
 
 function AboutSection() {
   return (
@@ -40,17 +41,21 @@ function AboutSection() {
               width={280}
               height={280}
               alt="Abu Said"
-              className="rounded-lg scale-110 cursor-pointer hover:scale-125 duration-300"
+              className="rounded-lg scale-110 cursor-pointer hover:scale-125 duration-300 mt-5"
             />
           </motion.div>
         </div>
-        <CardContainer className="">
+        <CardContainer className=" border-black border-2 rounded-xl">
+        <GlowCard
+                  key={"about"}
+                  identifier={`About-Glowcard`}
+                >
           <motion.div
             className="transition-colors duration-300 transform"
             whileInView={{ y: [-30, 0], opacity: [0, 1] }}
             transition={{ duration: 0.75 }}
           >
-            <div className="text-black font-sans text-sm lg:text-lg bg-gray-100 rounded-lg p-4 shadow-md">
+            <div className="text-black font-sans text-sm lg:text-lg bg-gray-100 rounded-lg p-4 shadow-md ">
               <p className="mb-5 pink-gradient-text text-xl uppercase font-poppins font-semibold">
                 Namaste,
               </p>
@@ -66,6 +71,7 @@ function AboutSection() {
               </p>
             </div>
           </motion.div>
+          </GlowCard>
         </CardContainer>
       </div>
     </div>
