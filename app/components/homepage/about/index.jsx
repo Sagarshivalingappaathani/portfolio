@@ -40,7 +40,7 @@ function AboutSection() {
               src="/Sagar.jpg"
               width={280}
               height={280}
-              alt="Abu Said"
+              alt="sagar athani"
               className="rounded-lg scale-110 cursor-pointer hover:scale-125 duration-300 mt-5"
             />
           </motion.div>

@@ -13,7 +13,7 @@ export const educations = [
   },
   {
     id: 3,
-    title: "Secondary School Leaving Certificate",
+    title: "Primary And High School",
     duration: "2010 - 2020",
     institution: "Janata Education Society, Harugeri",
   }
