@@ -217,6 +217,59 @@ import {
         },
       ],
     },
+    {
+      id: "project-7",
+      title: "Mini Stackoverflow",
+      github: "https://github.com/Sagarshivalingappaathani/Nullclass-Internship",
+      link: "",
+      demo : "",
+      image: "/project/stack.png",
+      content:
+        "The Stack Overflow Clone is a full-featured web application designed to replicate the core functionalities of the popular Q&A platform, Stack Overflow. This project aims to provide a platform where users can ask questions, provide answers. The clone is built with MERN stack.",
+       stack: [
+        {
+          id: "icon-1",
+          icon: SiMongodb,
+          name: "MongoDB"
+        },
+        {
+          id: "icon-2",
+          icon: SiExpress,
+          name: "Express.js"
+        },
+        {
+          id: "icon-3",
+          icon: SiReact,
+          name: "React"
+        },
+        {
+          id: "icon-4",
+          icon: SiNodedotjs,
+          name: "Node.Js"
+        },
+      ],
+    },
+    {
+      id: "project-8",
+      title: "AksharaRatna",
+      github: "https://github.com/Sagarshivalingappaathani/AksharaRatna-Next.js",
+      link: "https://akshararatna.vercel.app/",
+      demo : "",
+      image: "/project/aksha.png",
+      content:"The AksharaRatna Website is a simple, elegant front-end web application designed to showcase an author's books. The website provides a dedicated platform for authors to display detailed information about their published works, including book titles, cover images, descriptions and feedback from readers",
+       stack: [
+        {
+          id: "icon-1",
+          icon: SiNextdotjs,
+          name: "Next.Js"
+        },
+        {
+          id: "icon-2",
+          icon: SiTailwindcss,
+          name: "TailwindCSS"
+        },
+      ],
+    }
   ];
   
   
