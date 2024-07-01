@@ -46,31 +46,28 @@ function AboutSection() {
           </motion.div>
         </div>
         <CardContainer className=" border-black border-2 rounded-xl">
-        <GlowCard
-                  key={"about"}
-                  identifier={`About-Glowcard`}
-                >
-          <motion.div
-            className="transition-colors duration-300 transform"
-            whileInView={{ y: [-30, 0], opacity: [0, 1] }}
-            transition={{ duration: 0.75 }}
-          >
-            <div className="text-black font-sans text-sm lg:text-lg bg-gray-100 rounded-lg p-4 shadow-md ">
-              <p className="mb-5 pink-gradient-text text-xl uppercase font-poppins font-semibold">
-                Namaste,
-              </p>
-              <p className="font-semibold font-poppins">
-                I am a student at the National Institute of Technology Karnataka
-                (NITK), Surathkal, pursuing B.tech in
-                Information Technology. I am passionate about technology and its
-                potential to solve real-world problems. I have strong
-                programming skills in various languages, including C,
-                C++, Javascript and Python. I am also good in data structures and algorithms.
-                I am eager to learn new technologies and apply my skills to make
-                a positive impact on the world.
-              </p>
-            </div>
-          </motion.div>
+          <GlowCard key={"about"} identifier={`About-Glowcard`}>
+            <motion.div
+              className="transition-colors duration-300 transform"
+              whileInView={{ y: [-30, 0], opacity: [0, 1] }}
+              transition={{ duration: 0.75 }}
+            >
+              <div className="text-black font-sans text-sm lg:text-lg bg-gray-100 rounded-lg p-4 shadow-md ">
+                <p className="mb-5 pink-gradient-text text-xl uppercase font-poppins font-semibold">
+                  Namaste,
+                </p>
+                <p className="font-semibold font-poppins">
+                  I am a student at the National Institute of Technology
+                  Karnataka (NITK), Surathkal, pursuing B.tech in Information
+                  Technology. I am passionate about technology and its potential
+                  to solve real-world problems. I have strong programming skills
+                  in various languages, including C, C++, Javascript and Python.
+                  I am also good in data structures and algorithms. I am eager
+                  to learn new technologies and apply my skills to make a
+                  positive impact on the world.
+                </p>
+              </div>
+            </motion.div>
           </GlowCard>
         </CardContainer>
       </div>

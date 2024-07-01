@@ -75,6 +75,10 @@ import wordpress from '/public/svg/skills/wordpress.svg';
 import node from '/public/svg/skills/node.svg'
 import expressjs from '/public/svg/skills/express.js.svg';
 import github from '/public/svg/skills/github.gif'
+import oops from '/public/svg/skills/oops.png';
+import dbms from '/public/svg/skills/dbms.png';
+import os from '/public/svg/skills/os.png';
+import cn from '/public/svg/skills/cn.jpeg';
 
 
 export const skillsImage = (skill) => {
@@ -82,6 +86,16 @@ export const skillsImage = (skill) => {
   switch (skillID) {
     case 'gcp':
       return gcp;
+    case 'javaswing':
+      return java;
+    case 'oops':
+      return oops;
+    case 'dbms':
+      return dbms;
+    case 'os':
+      return os;
+    case 'networking':
+      return cn;
     case 'github':
       return github;
     case 'html':

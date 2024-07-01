@@ -1,6 +1,11 @@
 export const skillsData = [
   'C',
   'C++',
+  'JavaSwing',
+  'OOPS',
+  'DBMS',
+  'OS',
+  'Networking',
   'HTML',
   'CSS',
   'Javascript',
