@@ -73,13 +73,13 @@ function HeroSection() {
               >
                 <BsLinkedin size={35} />
               </Link>
-              <Link
+              {/* <Link
                 href={personalData.leetcode}
                 target="_blank"
                 className="transition-all text-orange-500 hover:scale-125 duration-300"
               >
                 <SiLeetcode size={35} />
-              </Link>
+              </Link> */}
             </div>
 
             <div className="flex items-center gap-3">
