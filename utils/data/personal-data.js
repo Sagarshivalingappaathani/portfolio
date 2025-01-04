@@ -8,5 +8,5 @@ export const personalData = {
   github: 'https://github.com/Sagarshivalingappaathani',
   linkedIn: 'https://www.linkedin.com/in/sagar-athani-4a5931251/',
   leetcode: "https://leetcode.com/sagar0418/",
-  resume:"https://drive.google.com/file/d/1THIJKKKr069z8rheZvuJ_HualDwTg_jk/view?usp=sharing"
+  resume:"https://drive.google.com/file/d/1mwUQOYxT1Tg87VxCXOe9KTARySDrww6X/view?usp=sharing"
 }
