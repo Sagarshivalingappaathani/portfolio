@@ -5,9 +5,9 @@ export const experiences = [
     company: "IE, NITK ",
     duration: "(Dec. 2022 – Present)",
     Description: [
-      "Developed a Club Event Management System in a team of 3 using Next.js, MongoDB, Express.js,and Mycalendar.js library",
-      "Implemented RBAC (Role Based Access Control) for effective admin and member role management",
-      "Included features like Event Scheduling (for admin), registration, Feedback System, and Responsive Design for a comprehensive user experience."
+      "Collaborated on the development of a Club Event Management System with a team of three using Next.js,MongoDB, Express.js and Mycalendar.js library for seamless admin-friendly event scheduling and management.",
+      "Deployed key features including event scheduling for admins, user registration, feedback system, and responsive design.",
+      " Organized Enigma, a flagship event of the IE Club for first-year students, attracting participation from 120+ students."
     ],
     image: "/image/ie.png",
   },
@@ -17,9 +17,9 @@ export const experiences = [
     company: "NullClass",
     duration: "(May. 2024 – June. 2024)",
     Description: [
-      "Created password reset functionality via email or phone.",
-      "Tracked user login info and implemented time-based mobile access rules.",
-      "Developed multi-language support, translating pages into Spanish, Hindi, Portuguese, Chinese, French, and English."
+      "Implemented authentication using JSON Web Tokens (JWT), encrypted passwords with bcrypt and implemented rate limiting with express-rate-limiter to mitigate Denial-of-Service attacks",
+      "Engineered a Multi-language support feature using Google Translate API to dynamically translate pages into Spanish, Hindi, Chinese, French, and English, enhancing user engagement and accessibility.",
+      "Developed a forgot password feature utilizing Nodemailer for email notifications and Twilio for SMS notifications."
     ],
     image: "/image/ie.png",
   },

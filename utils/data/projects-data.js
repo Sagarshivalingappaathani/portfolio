@@ -11,6 +11,10 @@ import {
   SiHtml5,
   SiMongodb,
   SiGooglecalendar,
+  SiTensorflow,
+  SiBlockchaindotcom,
+  SiStreamlit,
+  SiJupyter
 } from "react-icons/si";
 
   export const projects = [
@@ -48,14 +52,37 @@ import {
       ],
     },
     {
-      id: "project-2",
-      title: "TweetVerse",
-      github: "https://github.com/Sagarshivalingappaathani/TweetVerse-Social-Media-App",
+      id: "project-2.1",
+      title: "Cyber Threat Detection",
+      github: "https://github.com/Sagarshivalingappaathani/Cyber-Threat-Detection",
       link: "",
-      demo : "https://github.com/Sagarshivalingappaathani/TweetVerse-Social-Media-App",
-      image: "/project/tweetverse.png",
+      demo: "",
+      image: "/project/cyber.png",
       content:
-        "This website is a social media platform that resembles Twitter. Users can register, log in securely, and engage with various features including posting content (text, images, or videos) and exploring trending topics via hashtags just like the twitter.users can follow each other, and follower/following counts are displayed on user profiles.",
+       "This project focuses on network intrusion detection using the UNSW-NB15 dataset. It preprocesses data through feature engineering, outlier handling, and categorical encoding. To address class imbalance, SMOTE is applied. The model is trained using XGBoost and Random Forest, with performance evaluated through cross-validation using accuracy, precision, recall, and F1-score.",
+        stack: [
+        {
+          id: "icon-1",
+          icon: SiPython,
+          name: "Python",
+          
+        },
+        {
+          id: "icon-2",
+          icon: SiJupyter,
+          name: "Jupyter-Notebook"
+        },
+      ],
+    },
+    {
+      id: "project-2.2",
+      title: "Decentralized Exchange",
+      github: "https://github.com/Sagarshivalingappaathani/liquidity-pool",
+      link: "",
+      demo : "",
+      image: "/project/dex.png",
+      content:
+        "This project implements a Decentralized Exchange (DEX) with features for token creation, liquidity pooling, and token swapping. Token metadata is securely stored on Pinata for decentralized file storage. The Constant Product Market Maker (CPMM) algorithm powers the liquidity pool, ensuring efficient token swaps. Users can seamlessly trade tokens as long as a liquidity pool exists",
          stack: [
         {
           id: "icon-1",
@@ -69,15 +96,32 @@ import {
         },
         {
           id: "icon-3",
-          icon: SiMysql,
-          name: "MySql"
-        },
-        {
-          id: "icon-4",
-          icon: SiExpress,
-          name: "Express.js"
+          icon: SiBlockchaindotcom,
+          name: "Block-Chain"
         },
       ],
+    },
+    {
+      id: "project-4",
+      title: "IPL-Win-Probability",
+      github: "https://github.com/Sagarshivalingappaathani/ipl-win-probability",
+      link: "https://ipl-match-winning-probability.streamlit.app/",
+      demo : "",
+      image: "/project/Ipl.jpg",
+      content:
+        "The IPL Win Predictor is a platform designed to predict the outcome of IPL matches using Machine Learning. Users can select the batting team, bowling team, host city, and enter match details like target score, current score, overs completed, and wickets lost. The model processes this data to provide real-time win probability, helping users analyze match scenarios effectively.",
+        stack: [
+          {
+            id: "icon-1",
+            icon: SiPython,
+            name: "Python"
+          },
+          {
+            id: "icon-2",
+            icon: SiStreamlit,
+            name: "Streamlit"
+          },
+        ],
     },
     {
       id: "project-3",
@@ -112,130 +156,19 @@ import {
       ],
     },
     {
-      id: "project-4",
-      title: "DishDispatch",
-      github: "https://github.com/Sagarshivalingappaathani/DishDispatch-MERN-foodDelivary",
-      link: "",
-      demo : "https://www.youtube.com/watch?v=ZC13FF_0dok",
-      image: "/project/dishdispatch.png",
-      content:
-        "This platform aims to simplify the process of ordering and delivering food. Customers can browse dishes from menu, place their orders And Admin of DishDispatch can efficiently manage food orders. This project leverages modern web technologies to create a seamless food delivery experience for both customers and owners.",
-        stack: [
-        {
-          id: "icon-1",
-          icon: SiMongodb,
-          name: "MongoDB"
-        },
-        {
-          id: "icon-2",
-          icon: SiTailwindcss,
-          name: "TailwindCSS"
-        },
-        {
-          id: "icon-3",
-          icon: SiNodedotjs,
-          name: "Node.Js"
-        },
-        {
-          id: "icon-4",
-          icon: SiExpress,
-          name: "Express.js"
-        },
-        {
-          id: "icon-5",
-          icon: SiHtml5,
-          name: "HTML5"
-        },
-      ],
-    },
-    {
       id: "project-5",
-      title: "File System Simulation",
-      github: "https://github.com/Sagarshivalingappaathani/File-System-Simulation-Operating-System",
+      title: "My-Redis",
+      github: "https://github.com/Sagarshivalingappaathani/my-redis",
       link: "",
       demo : "",
-      image: "/image/os.png",
+      image: "/project/redis.png",
       content:
-        "This Python application provides a graphical user interface (GUI) for various file system operations like lising all files in Current directory, Create, Rename, Delate, Move, Copy, Encryption( Utilizes decryption libraries like cryptography to decrypt the file content ), Decryption, Searching, Restoreing From Trash using Tkinter",
+        "This project implements a basic Redis-like key-value store server and client application using Node.js. The server supports fundamental Redis commands such as SET, GET, DEL, KEYS, and EXIT for interacting with an in-memory storage.",
         stack: [
         {
           id: "icon-1",
-          icon: SiPython,
-          name: "Python"
-        },
-      ],
-    },
-    {
-      id: "project-6",
-      title: "Library Management system",
-      github: "https://github.com/Sagarshivalingappaathani/Library-Management-system",
-      link: "",
-      demo : "https://www.youtube.com/watch?v=EUeQX5Y4O4A",
-      image: "/project/lms.png",
-      content:"This is a Java-based Library Management System application designed to help manage books and user records in a library. It allows administrators and users to perform various tasks such as viewing available books, searching for books, borrowing books, returning books, and more.",
-      stack: [
-        {
-          id: "icon-1",
-          icon: SiJavascript,
-          name: "Java"
-        },
-        {
-          id: "icon-2",
-          icon: SiMysql,
-          name: "MySQL"
-        },
-      ],
-    },
-    {
-      id: "project-7",
-      title: "Mini Stackoverflow",
-      github: "https://github.com/Sagarshivalingappaathani/Nullclass-Internship",
-      link: "",
-      demo : "",
-      image: "/project/stack.png",
-      content:
-        "The Stack Overflow Clone is a full-featured web application designed to replicate the core functionalities of the popular Q&A platform, Stack Overflow. This project aims to provide a platform where users can ask questions, provide answers. The clone is built with MERN stack.",
-       stack: [
-        {
-          id: "icon-1",
-          icon: SiMongodb,
-          name: "MongoDB"
-        },
-        {
-          id: "icon-2",
-          icon: SiExpress,
-          name: "Express.js"
-        },
-        {
-          id: "icon-3",
-          icon: SiReact,
-          name: "React"
-        },
-        {
-          id: "icon-4",
           icon: SiNodedotjs,
-          name: "Node.Js"
-        },
-      ],
-    },
-    {
-      id: "project-8",
-      title: "AksharaRatna",
-      github: "https://github.com/Sagarshivalingappaathani/AksharaRatna-Next.js",
-      link: "https://akshararatna.vercel.app/",
-      demo : "",
-      image: "/project/aksha.png",
-      content:"The AksharaRatna Website is a simple, elegant front-end web application designed to showcase an author's books. The website provides a dedicated platform for authors to display detailed information about their published works, including book titles, cover images, descriptions and feedback from readers",
-       stack: [
-        {
-          id: "icon-1",
-          icon: SiNextdotjs,
-          name: "Next.Js"
-        },
-        {
-          id: "icon-2",
-          icon: SiTailwindcss,
-          name: "TailwindCSS"
+          name: "Node.js"
         },
       ],
     }

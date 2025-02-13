@@ -1,7 +1,7 @@
 export const personalData = {
   name: "Sagar Athani",
   profile: '/Sagar.png',
-  description: "I am a student at the National Institute of Technology Karnataka(NITK), Surathkal, pursuing B.tech in Information Technology. I am passionate about technology and its potential to solve real-world problems. I have strong programming skills in various languages, including C,C++, Javascript and Python. I am also good in data structures and algorithms.I am eager to learn new technologies and apply my skills to make a positive impact on the world.",
+  description: "I am a B.Tech student at NITK, Surathkal, passionate about technology and its real-world applications. Proficient in C++, JavaScript, Python, and Solidity, I have experience in web development, blockchain, and machine learning. I have built secure and scalable applications, implemented authentication systems, and worked on decentralized platforms. With a strong foundation in data structures and algorithms, I have solved over 600 problems on LeetCode. I enjoy learning new technologies, tackling challenges, and building innovative solutions that make an impact.",
   email: 'sagarathani0418@gmail.com',
   phone: '+91-7975208724',
   address: 'Belagavi,Karnataka',

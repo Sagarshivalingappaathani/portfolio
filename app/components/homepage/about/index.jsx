@@ -30,7 +30,7 @@ function AboutSection() {
       </div>
 
       <div className=" px-2 py-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-8">
           <motion.div
             className="transition-colors duration-300 transform"
             whileInView={{ y: [-30, 0], opacity: [0, 1] }}
@@ -38,8 +38,8 @@ function AboutSection() {
           >
             <Image
               src="/Sagar.jpg"
-              width={280}
-              height={280}
+              width={300}
+              height={300}
               alt="sagar athani"
               className="rounded-lg scale-110 cursor-pointer hover:scale-125 duration-300 mt-5"
             />
@@ -57,14 +57,15 @@ function AboutSection() {
                   Namaste,
                 </p>
                 <p className="font-semibold font-poppins">
-                  I am a student at the National Institute of Technology
-                  Karnataka (NITK), Surathkal, pursuing B.tech in Information
-                  Technology. I am passionate about technology and its potential
-                  to solve real-world problems. I have strong programming skills
-                  in various languages, including C, C++, Javascript and Python.
-                  I am also good in data structures and algorithms. I am eager
-                  to learn new technologies and apply my skills to make a
-                  positive impact on the world.
+                I am a B.Tech student at NITK, Surathkal, 
+                passionate about technology and its real-world applications. 
+                Proficient in C++, JavaScript, Python, and Solidity, 
+                I have experience in web development, blockchain, and machine learning. 
+                I have built secure and scalable applications, implemented authentication systems, 
+                and worked on decentralized platforms. With a strong foundation in 
+                data structures and algorithms, I have solved over 600 problems on LeetCode. 
+                I enjoy learning new technologies, tackling challenges, and building innovative 
+                solutions that make an impact.
                 </p>
               </div>
             </motion.div>
