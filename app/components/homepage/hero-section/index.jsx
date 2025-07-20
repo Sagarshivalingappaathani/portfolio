@@ -5,17 +5,11 @@ import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
-import { MdDownload } from "react-icons/md";
-import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
-import { experiences } from "@/utils/data/experience";
-import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
-import GlowCard from "../../helper/glow-card";
 import hero from "/public/lottie/hero.json";
-import cat from '/public/lottie/cat.json'
-import { TypewriterEffectSmooth } from "../../helper/ui/type-writer";
+import cat from '/public/lottie/cat.json';
+
 function HeroSection() {
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-8">
@@ -49,13 +43,12 @@ function HeroSection() {
                   height={50}
                 />
               </span>
-              <br />I am <span className=" pink-gradient-text">Sagar Athani,</span>
+              <br />I am <span className="pink-gradient-text">Sagar Athani,</span>
             </h1>
             <h3 className="text-xl mt-3 font-semibold leading-7 sm:leading-10 text-black font-poppins">
-              <span className=" text-[#070707] w-1/2">
-                {
-                  "Transforming ideas into code - specialized in blockchain, machine learning, and web development."
-                }
+              <span className="text-[#070707]">
+                Transforming ideas into code - specialized <br className="hidden sm:block" />
+                <span className="sm:inline">in blockchain, machine learning, and web development.</span>
               </span>
             </h3>
 
@@ -103,7 +96,7 @@ function HeroSection() {
               </Link>
             </div>
           </div>
-          <div className="order-1 lg:order-2  relative">
+          <div className="order-1 lg:order-2 relative">
             <AnimationLottie animationPath={hero} />
           </div>
           <div className="hidden lg:flex absolute p-10 bottom-10 right-80 w-15 h-15">
