@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/navbar';
 import HeroSection from "./components/homepage/hero-section";
-import AboutSection from "./components/homepage/about";
 import Education from "./components/homepage/education";
 import Experiences from "./components/homepage/experiences";
 import Projects from "./components/homepage/projects";
@@ -29,7 +28,6 @@ export default function Home() {
         <>
           <Navbar />
           <HeroSection />
-          <AboutSection />
           <Education />
           <Experiences />
           <Projects />

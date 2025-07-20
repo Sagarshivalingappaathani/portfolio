@@ -41,32 +41,45 @@ function Skills() {
         transition={{ duration: 0.75 }}
       >
         <div className="w-full my-12">
-          <div className="w-full my-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-6">
-            {skillsData.map((skill, id) => (
-              <div
-                key={id}
-                className="flex flex-col items-center justify-center transition-all duration-500  relative hover:scale-[1.15] cursor-pointer"
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto px-4">
+            {Object.entries(skillsData).map(([category, skills]) => (
+              <motion.div
+                key={category}
+                className="bg-[#f8f8f8] rounded-xl p-8 transition-all duration-300 relative"
+                whileHover={{ y: -5 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
               >
-                <div className="w-full  shadow-none shadow-gray-500 transition-all duration-500">
-                  <div className="flex justify-center">
-                    <div className="w-3/4">
-                      <div className="h-[1px] w-full" />
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-center gap-3 p-6">
-                    <div className="h-8 sm:h-10">
-                      <Image
-                        src={skillsImage(skill)?.src}
-                        alt={skill}
-                        width={40}
-                        height={40}
-                        className="h-full w-auto rounded-lg"
-                      />
-                    </div>
-                    <p className="text-black text-sm sm:text-lg font-poppins">{skill}</p>
-                  </div>
+                <div className="flex items-center mb-6">
+                  <div className="w-2 h-8 bg-black rounded-full mr-4"></div>
+                  <h3 className="text-2xl font-bold text-black font-poppins capitalize">
+                    {category === 'coursework' ? 'Course Work' : category}
+                  </h3>
                 </div>
-              </div>
+                
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                  {skills.map((skill, index) => (
+                    <div
+                      key={index}
+                      className="group flex flex-col items-center p-4 bg-transparent rounded-xl border border-gray-300 hover:border-black transition-all duration-300"
+                    >
+                      <div className="w-10 h-10 mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <Image
+                          src={skillsImage(skill)?.src}
+                          alt={skill}
+                          width={40}
+                          height={40}
+                          className="w-full h-full object-contain rounded-lg"
+                        />
+                      </div>
+                      <span className="text-black text-xs sm:text-sm font-poppins text-center transition-colors duration-300">
+                        {skill}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>

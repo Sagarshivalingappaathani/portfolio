@@ -79,6 +79,17 @@ import oops from '/public/svg/skills/oops.png';
 import dbms from '/public/svg/skills/dbms.png';
 import os from '/public/svg/skills/os.png';
 import cn from '/public/svg/skills/cn.jpeg';
+import solidity from '/public/svg/skills/solidity.svg';
+import langchain from '/public/svg/skills/langchain.svg';
+import kubernetes from '/public/svg/skills/kubernetes.svg';
+import vercel from '/public/svg/skills/vercel.svg';
+import postman from '/public/svg/skills/postman.svg';
+import cicd from '/public/svg/skills/cicd.svg';
+import algorithms from '/public/svg/skills/algorithms.svg';
+import machineLearning from '/public/svg/skills/machine-learning.svg';
+import deepLearning from '/public/svg/skills/deep-learning.svg';
+import nlp from '/public/svg/skills/nlp.svg';
+import blockchain from '/public/svg/skills/blockchain.svg';
 
 
 export const skillsImage = (skill) => {
@@ -248,6 +259,32 @@ export const skillsImage = (skill) => {
       return wolframalpha;
     case 'canva':
       return canva;
+    case 'solidity':
+      return solidity;
+    case 'langchain':
+      return langchain;
+    case 'kubernetes':
+      return kubernetes;
+    case 'vercel':
+      return vercel;
+    case 'postman':
+      return postman;
+    case 'ci/cd':
+      return cicd;
+    case 'data structures':
+      return algorithms;
+    case 'machine learning':
+      return machineLearning;
+    case 'deep learning':
+      return deepLearning;
+    case 'nlp':
+      return nlp;
+    case 'blockchain':
+      return blockchain;
+    case 'web development':
+      return html;
+    case 'sql':
+      return mysql;
     default:
       break;
   }

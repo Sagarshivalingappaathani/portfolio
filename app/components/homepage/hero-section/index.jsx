@@ -1,3 +1,4 @@
+
 "use client";
 import { motion } from "framer-motion";
 import { personalData } from "@/utils/data/personal-data";
@@ -53,7 +54,7 @@ function HeroSection() {
             <h3 className="text-xl mt-3 font-semibold leading-7 sm:leading-10 text-black font-poppins">
               <span className=" text-[#070707] w-1/2">
                 {
-                  "A Full Stack Web Developer with a Passion for Coding and Always Ready for the Next Coding Adventure."
+                  "Transforming ideas into code - specialized in blockchain, machine learning, and web development."
                 }
               </span>
             </h3>

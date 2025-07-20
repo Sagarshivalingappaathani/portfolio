@@ -1,15 +1,14 @@
 "use client";
 import Link from "next/link";
 import { CiLocationOn } from "react-icons/ci";
-import { IoLogoGithub, IoMdCall } from "react-icons/io";
+import { IoMdCall } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { HiExternalLink } from "react-icons/hi";
 import Image from "next/image";
 import AnimationLottie from "../../helper/animation-lottie";
-import GlowCard from "../../helper/glow-card";
 import lottieFile from "/public/lottie/contact.json";
 import { motion } from "framer-motion";
-import { BackgroundBeams } from "../../helper/ui/back-beam";
 
 function ContactSection() {
   return (
@@ -48,57 +47,136 @@ function ContactSection() {
                     <AnimationLottie animationPath={lottieFile} />
                   </div>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-4 md:gap-8 font-poppins mt-4">
-                  <div className="flex items-center bg-white rounded-lg p-3 hover:bg-gray-200 shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
-                    <MdAlternateEmail className="text-orange-500 text-lg mr-2" />
-                    <p className="text-sm text-gray-700 mr-4 font-bold">
-                      sagarathani0418@gmail.com
-                    </p>
-                  </div>
-                  <div className="flex items-center bg-white rounded-lg p-3 hover:bg-gray-200 shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
-                    <IoMdCall className="text-green-500 text-lg mr-2" />
-                    <p className="text-sm font-bold text-gray-700 mr-4">
-                      +91-7975208724
-                    </p>
-                  </div>
-                  <div className="flex items-center bg-white rounded-lg p-3 hover:bg-gray-200 shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
-                    <CiLocationOn className="text-red-700 text-lg mr-2" />
-                    <p className="text-sm text-gray-700 font-bold">
-                      Belagavi, Karnataka
-                    </p>
-                  </div>
+                <div className="flex flex-col justify-center items-center gap-4 md:gap-6 font-poppins mt-4">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    className="w-full"
+                  >
+                    <Link href="mailto:sagarathani0418@gmail.com">
+                      <div className="flex items-center bg-white rounded-xl p-4 hover:bg-gray-50 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer border border-gray-100 h-20">
+                        <div className="bg-orange-100 p-2 rounded-lg mr-3">
+                          <MdAlternateEmail className="text-orange-500 text-xl" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-xs text-gray-500 font-medium uppercase tracking-wide">Email</p>
+                          <p className="text-sm text-gray-800 font-bold truncate">
+                            sagarathani0418@gmail.com
+                          </p>
+                        </div>
+                        <HiExternalLink className="text-gray-400 text-sm ml-2 flex-shrink-0" />
+                      </div>
+                    </Link>
+                  </motion.div>
+                  
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="w-full"
+                  >
+                    <Link href="tel:+917975208724">
+                      <div className="flex items-center bg-white rounded-xl p-4 hover:bg-gray-50 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer border border-gray-100 h-20">
+                        <div className="bg-green-100 p-2 rounded-lg mr-3">
+                          <IoMdCall className="text-green-500 text-xl" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-xs text-gray-500 font-medium uppercase tracking-wide">Phone</p>
+                          <p className="text-sm text-gray-800 font-bold truncate">
+                            +91-7975208724
+                          </p>
+                        </div>
+                        <HiExternalLink className="text-gray-400 text-sm ml-2 flex-shrink-0" />
+                      </div>
+                    </Link>
+                  </motion.div>
+                  
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    className="w-full"
+                  >
+                    <div className="flex items-center bg-white rounded-xl p-4 shadow-lg border border-gray-100 h-20">
+                      <div className="bg-red-100 p-2 rounded-lg mr-3">
+                        <CiLocationOn className="text-red-500 text-xl" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-xs text-gray-500 font-medium uppercase tracking-wide">Location</p>
+                        <p className="text-sm text-gray-800 font-bold truncate">
+                          Belagavi, Karnataka
+                        </p>
+                      </div>
+                    </div>
+                  </motion.div>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-4 md:gap-8 font-poppins">
-                  <div className="flex items-center bg-white rounded-lg p-3 hover:bg-gray-200 shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
-                    <FaInstagram className="text-pink-500 text-lg mr-2" />
-                    <Link href="https://www.instagram.com/_sagar0418/" passHref>
-                      <p className="text-sm text-gray-700 font-bold cursor-pointer">
-                        _sagar0418
-                      </p>
+                <div className="flex flex-col justify-center items-center gap-4 md:gap-6 font-poppins">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                    className="w-full"
+                  >
+                    <Link href="https://www.instagram.com/_sagar0418/" target="_blank" rel="noopener noreferrer">
+                      <div className="flex items-center bg-white rounded-xl p-4 hover:bg-gray-50 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer border border-gray-100 h-20">
+                        <div className="bg-pink-100 p-2 rounded-lg mr-3">
+                          <FaInstagram className="text-pink-500 text-xl" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-xs text-gray-500 font-medium uppercase tracking-wide">Instagram</p>
+                          <p className="text-sm text-gray-800 font-bold truncate">
+                            _sagar0418
+                          </p>
+                        </div>
+                        <HiExternalLink className="text-gray-400 text-sm ml-2 flex-shrink-0" />
+                      </div>
                     </Link>
-                  </div>
-                  <div className="flex items-center bg-white rounded-lg p-3 hover:bg-gray-200 shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
-                    <FaLinkedin className="text-blue-500 text-lg mr-2" />
-                    <Link
-                      href="https://www.linkedin.com/in/sagar-athani-4a5931251/"
-                      passHref
-                    >
-                      <p className="text-sm text-gray-700 font-bold cursor-pointer">
-                        Sagar Athani
-                      </p>
+                  </motion.div>
+                  
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                    className="w-full"
+                  >
+                    <Link href="https://www.linkedin.com/in/sagar-athani-4a5931251/" target="_blank" rel="noopener noreferrer">
+                      <div className="flex items-center bg-white rounded-xl p-4 hover:bg-gray-50 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer border border-gray-100 h-20">
+                        <div className="bg-blue-100 p-2 rounded-lg mr-3">
+                          <FaLinkedin className="text-blue-500 text-xl" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-xs text-gray-500 font-medium uppercase tracking-wide">LinkedIn</p>
+                          <p className="text-sm text-gray-800 font-bold truncate">
+                            Sagar Athani
+                          </p>
+                        </div>
+                        <HiExternalLink className="text-gray-400 text-sm ml-2 flex-shrink-0" />
+                      </div>
                     </Link>
-                  </div>
-                  <div className="flex items-center bg-white rounded-lg p-3 hover:bg-gray-200 shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
-                    <FaGithub className="text-black text-lg mr-2" />
-                    <Link
-                      href="https://github.com/Sagarshivalingappaathani"
-                      passHref
-                    >
-                      <p className="text-sm text-gray-700 font-bold cursor-pointer">
-                        Sagarshivalingappaathani
-                      </p>
+                  </motion.div>
+                  
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                    className="w-full"
+                  >
+                    <Link href="https://github.com/Sagarshivalingappaathani" target="_blank" rel="noopener noreferrer">
+                      <div className="flex items-center bg-white rounded-xl p-4 hover:bg-gray-50 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer border border-gray-100 h-20">
+                        <div className="bg-gray-100 p-2 rounded-lg mr-3">
+                          <FaGithub className="text-gray-700 text-xl" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-xs text-gray-500 font-medium uppercase tracking-wide">GitHub</p>
+                          <p className="text-sm text-gray-800 font-bold truncate">
+                            Sagarshivalingappaathani
+                          </p>
+                        </div>
+                        <HiExternalLink className="text-gray-400 text-sm ml-2 flex-shrink-0" />
+                      </div>
                     </Link>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             </div>

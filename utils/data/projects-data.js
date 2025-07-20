@@ -14,12 +14,91 @@ import {
   SiTensorflow,
   SiBlockchaindotcom,
   SiStreamlit,
-  SiJupyter
+  SiJupyter,
+  SiTypescript,
+  SiEthereum,
+  SiFastapi,
+  SiSolidity,
+  SiIpfs
 } from "react-icons/si";
 
   export const projects = [
     {
+      id: "project-0",
+      title: "FundVerify",
+      github: "https://github.com/Sagarshivalingappaathani/Public-Fund-Management",
+      link: "",
+      demo: "https://www.youtube.com/watch?v=lmQ_og4sBYg",
+      image: "/project/fundverify.png",
+      content:
+        "Built a decentralized public fund management system using Ethereum smart contracts with multi-stage fund allocation, ensuring transparency and accountability. Implemented secure voting with Zero-Knowledge Proofs and Soulbound Tokens for verified identity. Automated fund disbursement with AI-powered verification using LangChain and RAG models to validate IPFS-hosted reports.",
+      stack: [
+        {
+          id: "icon-1",
+          icon: SiNextdotjs,
+          name: "Next.js"
+        },
+        {
+          id: "icon-2",
+          icon: SiTailwindcss,
+          name: "TailwindCSS"
+        },
+        {
+          id: "icon-3",
+          icon: SiSolidity,
+          name: "Solidity"
+        },
+        {
+          id: "icon-4",
+          icon: SiEthereum,
+          name: "Ethereum"
+        },
+        {
+          id: "icon-5",
+          icon: SiIpfs,
+          name: "IPFS"
+        },
+      ],
+    },
+    {
       id: "project-1",
+      title: "TrustFlow",
+      github: "https://github.com/Sagarshivalingappaathani/TrustFlow",
+      link: "",
+      demo: "https://www.youtube.com/watch?v=PganpPv28KU&themeRefresh=1",
+      image: "/project/trustflow.png",
+      content:
+        "Built an agentic supply chain management platform on Ethereum with complete product traceability and 6-stage delivery pipeline. Developed autonomous AI agents that analyze market conditions, execute blockchain transactions, and generate PDF reports. Implemented smart contracts for supplier-buyer relationships, QR-based order tracking, and Razorpay UPI payment integration.",
+      stack: [
+        {
+          id: "icon-1",
+          icon: SiNextdotjs,
+          name: "Next.js"
+        },
+        {
+          id: "icon-2",
+          icon: SiTypescript,
+          name: "TypeScript"
+        },
+        {
+          id: "icon-3",
+          icon: SiEthereum,
+          name: "Ethereum"
+        },
+        {
+          id: "icon-4",
+          icon: SiFastapi,
+          name: "FastAPI"
+        },
+        {
+          id: "icon-5",
+          icon: SiTailwindcss,
+          name: "TailwindCSS"
+        },
+      ],
+    },
+    {
+      id: "project-2",
       title: "LetsCode",
       github: "https://github.com/Sagarshivalingappaathani/letsCode-Coding-Platform",
       link: "https://lets-code-pink.vercel.app/",
@@ -71,33 +150,6 @@ import {
           id: "icon-2",
           icon: SiJupyter,
           name: "Jupyter-Notebook"
-        },
-      ],
-    },
-    {
-      id: "project-2.2",
-      title: "Decentralized Exchange",
-      github: "https://github.com/Sagarshivalingappaathani/liquidity-pool",
-      link: "",
-      demo : "",
-      image: "/project/dex.png",
-      content:
-        "This project implements a Decentralized Exchange (DEX) with features for token creation, liquidity pooling, and token swapping. Token metadata is securely stored on Pinata for decentralized file storage. The Constant Product Market Maker (CPMM) algorithm powers the liquidity pool, ensuring efficient token swaps. Users can seamlessly trade tokens as long as a liquidity pool exists",
-         stack: [
-        {
-          id: "icon-1",
-          icon: SiNextdotjs,
-          name: "Next.js"
-        },
-        {
-          id: "icon-2",
-          icon: SiTailwindcss,
-          name: "TailwindCSS"
-        },
-        {
-          id: "icon-3",
-          icon: SiBlockchaindotcom,
-          name: "Block-Chain"
         },
       ],
     },
@@ -155,23 +207,6 @@ import {
         },
       ],
     },
-    {
-      id: "project-5",
-      title: "My-Redis",
-      github: "https://github.com/Sagarshivalingappaathani/my-redis",
-      link: "",
-      demo : "",
-      image: "/project/redis.png",
-      content:
-        "This project implements a basic Redis-like key-value store server and client application using Node.js. The server supports fundamental Redis commands such as SET, GET, DEL, KEYS, and EXIT for interacting with an in-memory storage.",
-        stack: [
-        {
-          id: "icon-1",
-          icon: SiNodedotjs,
-          name: "Node.js"
-        },
-      ],
-    }
   ];
   
   

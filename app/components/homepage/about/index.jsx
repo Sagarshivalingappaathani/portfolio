@@ -57,15 +57,12 @@ function AboutSection() {
                   Namaste,
                 </p>
                 <p className="font-semibold font-poppins">
-                I am a B.Tech student at NITK, Surathkal, 
-                passionate about technology and its real-world applications. 
-                Proficient in C++, JavaScript, Python, and Solidity, 
-                I have experience in web development, blockchain, and machine learning. 
-                I have built secure and scalable applications, implemented authentication systems, 
-                and worked on decentralized platforms. With a strong foundation in 
-                data structures and algorithms, I have solved over 600 problems on LeetCode. 
-                I enjoy learning new technologies, tackling challenges, and building innovative 
-                solutions that make an impact.
+                I am a B.Tech student at NITK, Surathkal, passionate about technology and innovation. 
+                Proficient in C++, JavaScript, Python, and Solidity, I specialize in web development, 
+                machine learning, and blockchain.
+                <br /><br />
+                Recently interned at Bosch Global Software Technologies, working with large datasets 
+                and graph neural networks. I enjoy building scalable applications and tackling complex challenges.
                 </p>
               </div>
             </motion.div>
