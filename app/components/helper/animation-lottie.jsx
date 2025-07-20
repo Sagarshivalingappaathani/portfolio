@@ -1,8 +1,19 @@
 "use client";
 
-import Lottie from "lottie-react";
+import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 
-const AnimationLottie = ({ animationPath, width }) => {
+const Lottie = dynamic(() => import("lottie-react"), {
+  ssr: false,
+});
+
+const AnimationLottie = ({ animationPath }) => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -11,6 +22,10 @@ const AnimationLottie = ({ animationPath, width }) => {
       width: '95%',
     }
   };
+
+  if (!isClient) {
+    return <div style={{ width: '95%', height: '300px' }} />; // placeholder
+  }
 
   return (
     <Lottie {...defaultOptions} />
