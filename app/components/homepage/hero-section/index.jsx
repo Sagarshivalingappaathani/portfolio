@@ -48,7 +48,7 @@ function HeroSection() {
             <h3 className="text-xl mt-3 font-semibold leading-7 sm:leading-10 text-black font-poppins">
               <span className="text-[#070707]">
                 Transforming ideas into code - specialized <br className="hidden sm:block" />
-                <span className="sm:inline">in blockchain, machine learning, and web development.</span>
+                <span className="sm:inline">in web development, machine learning, and blockchain.</span>
               </span>
             </h3>
 
